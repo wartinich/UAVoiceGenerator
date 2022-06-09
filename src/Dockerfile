@@ -2,9 +2,10 @@ FROM python:3.10.2
 
 WORKDIR /app
 
-COPY ./requiremets.txt /app
+COPY ./req.txt /app
 
-RUN pip install -m requiremets.txt --no-cache-dir
+RUN pip install --upgrade pip
+RUN pip install -r req.txt --no-cache-dir
 
 COPY . /app
 

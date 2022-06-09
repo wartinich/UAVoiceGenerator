@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from datetime import timedelta
 
@@ -30,7 +31,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'djoser',
-    'drf_yasg'
+    'drf_yasg',
     
     'users',
 ]
@@ -141,5 +142,5 @@ SIMPLE_JWT = {
 
 }
 
-CELERY_BROKER_URL = "redis://127.0.0.1:6379/0"
-CELERY_RESULT_BACKEND = "redis://127.0.0.1:6379/0"
+CELERY_BROKER_URL = "redis://redis:6379"
+CELERY_RESULT_BACKEND = "redis://redis:6379"
