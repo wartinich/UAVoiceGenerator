@@ -1,6 +1,7 @@
 .vscode
 env
 db
+tasks
 
 .idea
 .idea/
