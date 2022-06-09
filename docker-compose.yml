@@ -30,7 +30,17 @@ services:
     depends_on:
       - db
 
+  celery:
+    build:
+      context: ./src
+    command: celery -A config worker -l info
+    volumes:
+      - ./src:/usr/src/app
+
+    depends_on:
+      - back
+      - redis
 
 volumes:
   postgres_data:
-  tasks:
+
