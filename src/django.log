@@ -333,3 +333,12 @@ INFO [2022-06-13 09:42:09,019] - [django.utils.autoreload:run_with_reloader:677]
 INFO [2022-06-13 09:42:09,623] - [django.server:log_message:187] "GET /sign_up HTTP/1.1" 200 1917
 INFO [2022-06-13 09:44:45,975] - [django.server:log_message:187] "GET /sign_up HTTP/1.1" 200 1943
 INFO [2022-06-13 09:46:36,342] - [django.server:log_message:187] "GET /login HTTP/1.1" 200 950
+INFO [2022-06-13 09:48:26,334] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:51:21,893] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-13 09:51:22,349] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:51:38,981] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-13 09:51:39,442] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:52:29,136] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-13 09:52:29,707] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:52:45,379] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-13 09:52:45,962] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
