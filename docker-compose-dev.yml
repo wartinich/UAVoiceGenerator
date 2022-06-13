@@ -3,6 +3,7 @@ version: "3"
 services:
   db:
     image: postgres:12.0-alpine
+    container_name: db
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:

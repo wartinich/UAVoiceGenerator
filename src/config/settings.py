@@ -1,10 +1,12 @@
 import os
 from pathlib import Path
+from environs import Env
 from datetime import timedelta
+
+env = Env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -72,11 +74,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'django_db',
         'USER': 'django_user',
         'PASSWORD': 'django_password',
-        'HOST': 'db',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
@@ -140,15 +142,15 @@ LOGGING = {
             'level': 'DEBUG',
             'formatter': 'verbose',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': DJANGO_LOGFILE_NAME,
-            'maxBytes': LOGFILE_SIZE
+            'filename': os.path.join(BASE_DIR, 'django.log'),
+            'maxBytes': 1000000
         },
         'celery_file': {
             'level': 'DEBUG',
             'formatter': 'verbose',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': CELERY_LOGFILE_NAME,
-            'maxBytes': LOGFILE_SIZE
+            'filename': os.path.join(BASE_DIR, 'celery.log'),
+            'maxBytes': 1000000
         },
         'console': {
             'level': 'DEBUG',
