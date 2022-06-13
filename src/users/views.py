@@ -1,8 +1,9 @@
 from django.views.generic import CreateView, View
 from django.urls import reverse_lazy
 from django.shortcuts import render, redirect
-from users.forms import LoginForm, RegisterForm
+from users.forms import LoginUserForm, RegisterForm
 from django.http import HttpResponse
+from django.contrib.auth import authenticate, login
 
 
 class SignUpPageView(CreateView):
@@ -14,32 +15,30 @@ class SignUpPageView(CreateView):
 class LoginPageView(View):
     """Login Page View"""
     template_name = 'auth/login.html'
-    form_class = LoginForm
+    form_class = LoginUserForm
 
     def get(self, request):
         context = {
             'form': self.form_class(),
-            'message': ''
         }
         return render(request, self.template_name, context)
 
     def post(self, request):
         form = self.form_class(request.POST)
         if form.is_valid():
-            if form.cleaned_data['password1'] != form.cleaned_data['password2']:
-                print('Password error')
-            else:
-                password = form.cleaned_data['password1']
-
             user = authenticate(
                 email=form.cleaned_data['email'],
                 username=form.cleaned_data['username'],
-                password=password,
+                password=form.cleaned_data['password'],
             )
             if user is not None:
                 login(request, user)
-                return redirect('home')
+                redirect('admin')
+            else:
+                return HttpResponse('Invalid login')
 
+        else:
+            return HttpResponse('Invalid form')
 
         context = {
             'form': form,

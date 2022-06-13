@@ -16,12 +16,12 @@ class RegisterForm(UserCreationForm):
         fields = ['username', 'email', 'first_name', 'last_name', 'birth_date', 'sex', 'password1', 'password2']
 
 
-class LoginForm(forms.ModelForm):
+class LoginUserForm(forms.ModelForm):
     """Login Form"""
-    password1 = forms.CharField(required=True, widget=forms.PasswordInput())
-    password2 = forms.CharField(required=True, widget=forms.PasswordInput())
-
+    username = forms.CharField(required=True)
+    email = forms.EmailField(required=True, widget=forms.EmailInput())
+    password = forms.CharField(required=True, widget=forms.PasswordInput())
 
     class Meta:
         model = User
-        fields = ['username', 'email', 'password1', 'password2']
+        fields = ['username', 'email', 'password']

@@ -785,3 +785,216 @@ Traceback (most recent call last):
     raise SMTPAuthenticationError(code, resp)
 smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials c18-20020a056512105200b00478f1bd611csm942514lfb.284 - gsmtp')
 ERROR [2022-06-13 11:14:04,039] - [django.server:log_message:187] "POST /password-reset/ HTTP/1.1" 500 139678
+INFO [2022-06-13 11:52:36,130] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 11:52:41,924] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 667
+ERROR [2022-06-13 11:52:43,914] - [django.request:log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 23, in post
+    user = authenticate(
+NameError: name 'authenticate' is not defined
+ERROR [2022-06-13 11:52:43,915] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 500 75941
+INFO [2022-06-13 11:56:00,149] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 11:56:00,937] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 11:56:55,436] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 11:56:56,122] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 11:57:08,153] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 816
+INFO [2022-06-13 11:57:55,973] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 884
+INFO [2022-06-13 11:58:23,196] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 11:59:08,199] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 11:59:08,722] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 11:59:15,539] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:00:52,155] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:00:52,716] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:01:15,348] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-13 12:01:15,941] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-13 12:01:18,386] - [django.request:log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 30, in user_login
+    return render(request, 'account/login.html', {'form': form})
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: account/login.html
+ERROR [2022-06-13 12:01:18,387] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 500 82580
+INFO [2022-06-13 12:01:33,637] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:01:34,234] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:01:36,061] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:37,603] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:38,879] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:39,425] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:39,808] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:40,204] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:40,618] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:40,991] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:41,194] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:41,568] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:41,943] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:42,322] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:42,692] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:43,072] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:43,458] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:43,812] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:44,181] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:44,542] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:44,911] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:45,293] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:45,653] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:46,005] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:01:46,349] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:16,622] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:02:17,252] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:02:19,696] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:21,437] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:21,965] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:22,318] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:22,664] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:23,044] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:23,385] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:23,741] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:24,084] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:24,615] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:24,920] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:46,009] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:47,788] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:48,720] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:49,289] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:49,664] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:50,048] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:50,418] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:50,801] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:51,189] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:51,573] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:51,951] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:02:52,329] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:04:41,784] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-13 12:04:42,385] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:04:43,626] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:04:44,250] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:04:59,482] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:01,019] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:01,653] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:02,197] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:02,984] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:15,508] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:05:16,336] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:05:17,514] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:18,696] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:19,295] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:19,461] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:19,643] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:19,845] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:20,075] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:20,294] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:32,027] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:05:32,520] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:05:33,738] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:34,432] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:35,089] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:35,554] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:35,755] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:36,114] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:36,462] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:36,807] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:05:39,661] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 12:06:05,376] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:06:06,377] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:06:06,982] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:06:07,233] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:06:35,270] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:06:35,689] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:06:35,899] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:06:36,120] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:06:36,777] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:06:37,461] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:06:51,857] - [django.server:log_message:187] "GET /logout/ HTTP/1.1" 200 643
+INFO [2022-06-13 12:06:53,632] - [django.server:log_message:187] "POST /logout/ HTTP/1.1" 200 643
+INFO [2022-06-13 12:06:54,331] - [django.server:log_message:187] "POST /logout/ HTTP/1.1" 200 643
+INFO [2022-06-13 12:07:02,783] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 869
+ERROR [2022-06-13 12:07:25,925] - [django.request:log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 29, in post
+    user = authenticate(
+NameError: name 'authenticate' is not defined
+ERROR [2022-06-13 12:07:25,927] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 500 76434
+INFO [2022-06-13 12:10:14,601] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:10:15,091] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:10:38,553] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:10:40,023] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:10:40,813] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:10:42,086] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:10:43,034] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:10:43,895] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:10:44,414] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:10:44,784] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:10:45,302] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:11:06,750] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:11:07,229] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:12:23,164] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:12:23,797] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:12:54,713] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:12:55,154] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:13:04,609] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:13:05,145] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:13:20,578] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:13:21,104] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:13:31,306] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:13:32,122] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:13:32,507] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:13:33,094] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:13:33,466] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:13:33,838] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:13:34,001] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:13:34,379] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:13:36,158] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 932
+INFO [2022-06-13 12:14:07,344] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:14:28,477] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:14:28,831] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:14:29,171] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:14:29,519] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:14:30,168] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:14:30,481] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:14:54,183] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:14:54,743] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:14:55,768] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 935
+INFO [2022-06-13 12:15:25,696] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:15:26,279] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:15:27,710] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 12
+INFO [2022-06-13 12:15:58,254] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:15:59,007] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:16:00,339] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 12
+INFO [2022-06-13 12:17:56,627] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:17:57,162] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:18:00,300] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 12
+INFO [2022-06-13 12:18:03,492] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 12
+INFO [2022-06-13 12:18:07,324] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 12
+INFO [2022-06-13 12:19:48,299] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 12
+INFO [2022-06-13 12:19:51,378] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 12
+INFO [2022-06-13 12:20:03,056] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 12
+INFO [2022-06-13 12:20:05,539] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 12
+INFO [2022-06-13 12:20:33,606] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 12:20:34,250] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 12:21:00,089] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 12
+INFO [2022-06-13 12:21:03,377] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 12
