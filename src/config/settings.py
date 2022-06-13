@@ -127,6 +127,48 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'files/media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': True,
+    'formatters': {
+        'verbose': {
+            'format': '%(levelname)s [%(asctime)s] - [%(name)s:%(funcName)s:%(lineno)s] %(message)s',
+        },
+    },
+    'handlers': {
+        'logfile': {
+            'level': 'DEBUG',
+            'formatter': 'verbose',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': DJANGO_LOGFILE_NAME,
+            'maxBytes': LOGFILE_SIZE
+        },
+        'celery_file': {
+            'level': 'DEBUG',
+            'formatter': 'verbose',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': CELERY_LOGFILE_NAME,
+            'maxBytes': LOGFILE_SIZE
+        },
+        'console': {
+            'level': 'DEBUG',
+            'formatter': 'verbose',
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'celery': {
+            'handlers': ['celery_file', 'console'],
+            'propagate': True,
+            'level': env.str('CELERY_LOG_LEVEL', 'INFO'),
+        },
+        'django': {
+            'handlers': ['logfile', 'console'],
+            'propagate': True,
+            'level': env.str('DJANGO_LOG_LEVEL', 'INFO'),
+        },
+    },
+}
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
