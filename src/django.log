@@ -274,3 +274,62 @@ INFO [2022-06-13 09:19:46,521] - [django.utils.autoreload:run_with_reloader:677]
 INFO [2022-06-13 09:19:54,963] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
 INFO [2022-06-13 09:19:55,597] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
 INFO [2022-06-13 09:19:59,940] - [django.server:log_message:187] "GET /login HTTP/1.1" 200 1332
+INFO [2022-06-13 09:21:08,271] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:22:49,658] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-13 09:22:50,201] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:22:56,556] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-13 09:22:57,237] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:23:08,631] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-13 09:23:09,148] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:23:25,874] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-13 09:23:26,345] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:23:53,026] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-13 09:23:53,540] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:24:19,289] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-13 09:24:19,826] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:27:11,537] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-13 09:27:12,157] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:28:06,748] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:28:07,209] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:28:31,897] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:28:32,401] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:28:50,899] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:28:51,426] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:29:03,802] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:29:04,616] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:29:11,162] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:29:12,002] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:29:13,249] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:29:14,208] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:29:30,927] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:29:31,626] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:30:01,507] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:30:02,312] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:32:13,220] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-13 09:32:13,845] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:32:27,118] - [django.server:log_message:187] "GET /swagger/ HTTP/1.1" 200 2232
+INFO [2022-06-13 09:32:27,219] - [django.server:log_message:187] "GET /static/drf-yasg/style.css HTTP/1.1" 200 1047
+INFO [2022-06-13 09:32:27,221] - [django.server:log_message:187] "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 200 2093
+INFO [2022-06-13 09:32:27,228] - [django.server:log_message:187] "GET /static/drf-yasg/url-polyfill.min.js HTTP/1.1" 200 6092
+INFO [2022-06-13 09:32:27,231] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 200 14715
+INFO [2022-06-13 09:32:27,232] - [django.server:log_message:187] "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 200 56904
+INFO [2022-06-13 09:32:27,235] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 200 143074
+INFO [2022-06-13 09:32:27,239] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 200 329649
+INFO [2022-06-13 09:32:27,241] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1038857
+INFO [2022-06-13 09:32:30,329] - [django.server:log_message:187] "GET /sign_up HTTP/1.1" 200 1917
+INFO [2022-06-13 09:39:04,624] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-13 09:39:05,139] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:39:29,411] - [django.server:log_message:187] "GET /sign_up HTTP/1.1" 200 1917
+INFO [2022-06-13 09:40:50,686] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-13 09:40:51,363] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:41:04,901] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-13 09:41:05,503] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:41:07,352] - [django.server:log_message:187] "GET /sign_up HTTP/1.1" 200 1750
+INFO [2022-06-13 09:41:58,154] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-13 09:41:58,682] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:42:01,205] - [django.server:log_message:187] "GET /sign_up HTTP/1.1" 200 1750
+INFO [2022-06-13 09:42:08,378] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-13 09:42:09,019] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:42:09,623] - [django.server:log_message:187] "GET /sign_up HTTP/1.1" 200 1917
+INFO [2022-06-13 09:44:45,975] - [django.server:log_message:187] "GET /sign_up HTTP/1.1" 200 1943
+INFO [2022-06-13 09:46:36,342] - [django.server:log_message:187] "GET /login HTTP/1.1" 200 950

@@ -5,8 +5,12 @@
 {% block content %}
     <p>{{ message }}</p>
     <form method="post">
-        {{ form.as_p }}
+        <h1>Login</h1>
+        {{ form.email }}
+        {{ form.username }}
+        {{ form.password1 }}
+        {{ form.password2 }}
         {% csrf_token %}
-        <button type="submit" >Submit</button>
+        <button type="submit" >Login</button>
     </form>
 {% endblock %}

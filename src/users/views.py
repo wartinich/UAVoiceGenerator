@@ -1,10 +1,18 @@
-from django.views.generic import View
+from django.views.generic import CreateView, View
+from django.urls import reverse_lazy
 from django.shortcuts import render, redirect
-from users.forms import LoginForm
+from users.forms import LoginForm, RegisterForm
 from django.http import HttpResponse
 
 
+class SignUpPageView(CreateView):
+    form_class = RegisterForm
+    success_url = reverse_lazy('login')
+    template_name = 'auth/sign_up.html'
+
+
 class LoginPageView(View):
+    """Login Page View"""
     template_name = 'auth/login.html'
     form_class = LoginForm
 
