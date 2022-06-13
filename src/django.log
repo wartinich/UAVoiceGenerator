@@ -1,0 +1,12 @@
+INFO [2022-06-13 05:46:16,862] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 06:16:59,675] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-13 06:17:02,276] - [django.request:log_response:241] Not Found: /
+WARNING [2022-06-13 06:17:02,277] - [django.server:log_message:187] "GET / HTTP/1.1" 404 2891
+WARNING [2022-06-13 06:17:02,435] - [django.request:log_response:241] Not Found: /favicon.ico
+WARNING [2022-06-13 06:17:02,437] - [django.server:log_message:187] "GET /favicon.ico HTTP/1.1" 404 2942
+WARNING [2022-06-13 06:17:05,521] - [django.request:log_response:241] Not Found: /
+WARNING [2022-06-13 06:17:05,521] - [django.server:log_message:187] "GET / HTTP/1.1" 404 2891
+INFO [2022-06-13 06:57:12,686] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-13 06:57:16,334] - [django.request:log_response:241] Not Found: /
+WARNING [2022-06-13 06:57:16,335] - [django.server:log_message:187] "GET / HTTP/1.1" 404 2891
+INFO [2022-06-13 07:06:47,819] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader

@@ -13,6 +13,9 @@ idea
 *.egg
 .env
 
+celery.log
+django.log
+
 dist
 db.sqlite3
 
