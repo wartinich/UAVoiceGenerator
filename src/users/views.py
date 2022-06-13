@@ -27,7 +27,7 @@ class LoginPageView(View):
         form = self.form_class(request.POST)
         if form.is_valid():
             if form.cleaned_data['password1'] != form.cleaned_data['password2']:
-                message = 'Password error'
+                print('Password error')
             else:
                 password = form.cleaned_data['password1']
 
@@ -38,12 +38,11 @@ class LoginPageView(View):
             )
             if user is not None:
                 login(request, user)
-                return HttpResponse('++++==')
-        message = 'Login failed!'
+                return redirect('home')
+
 
         context = {
             'form': form,
-            'message': message
         }
 
         return render(request, self.template_name, context=context)

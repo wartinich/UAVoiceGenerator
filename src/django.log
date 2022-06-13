@@ -342,3 +342,446 @@ INFO [2022-06-13 09:52:29,136] - [django.utils.autoreload:trigger_reload:266] /h
 INFO [2022-06-13 09:52:29,707] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
 INFO [2022-06-13 09:52:45,379] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
 INFO [2022-06-13 09:52:45,962] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:53:51,941] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 10:30:20,490] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/config/urls.py changed, reloading.
+INFO [2022-06-13 10:30:21,248] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 10:30:39,704] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/config/urls.py changed, reloading.
+INFO [2022-06-13 10:30:40,181] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 10:38:51,555] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/config/settings.py changed, reloading.
+INFO [2022-06-13 10:38:52,137] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-13 10:40:17,546] - [django.request:log_response:241] Not Found: /
+WARNING [2022-06-13 10:40:17,546] - [django.server:log_message:187] "GET / HTTP/1.1" 404 3499
+WARNING [2022-06-13 10:40:34,171] - [django.request:log_response:241] Not Found: /password_rest/
+WARNING [2022-06-13 10:40:34,172] - [django.server:log_message:187] "GET /password_rest/ HTTP/1.1" 404 3559
+WARNING [2022-06-13 10:40:40,524] - [django.request:log_response:241] Not Found: /password_reset/
+WARNING [2022-06-13 10:40:40,524] - [django.server:log_message:187] "GET /password_reset/ HTTP/1.1" 404 3562
+INFO [2022-06-13 10:41:45,485] - [django.server:log_message:187] "GET /swagger/ HTTP/1.1" 200 2232
+INFO [2022-06-13 10:41:45,556] - [django.server:log_message:187] "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO [2022-06-13 10:41:45,560] - [django.server:log_message:187] "GET /static/drf-yasg/url-polyfill.min.js HTTP/1.1" 304 0
+INFO [2022-06-13 10:41:45,561] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO [2022-06-13 10:41:45,567] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO [2022-06-13 10:41:45,569] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO [2022-06-13 10:41:45,571] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO [2022-06-13 10:41:45,573] - [django.server:log_message:187] "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO [2022-06-13 10:41:45,573] - [django.server:log_message:187] "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO [2022-06-13 10:41:46,549] - [django.server:log_message:187] "GET /swagger/?format=openapi HTTP/1.1" 200 2302
+INFO [2022-06-13 10:42:34,976] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/config/urls.py changed, reloading.
+INFO [2022-06-13 10:42:35,482] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 10:43:11,491] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/config/urls.py changed, reloading.
+INFO [2022-06-13 10:43:12,203] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 10:45:46,230] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/config/urls.py changed, reloading.
+INFO [2022-06-13 10:45:46,867] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 10:48:13,076] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-13 10:48:13,806] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 10:48:37,478] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-13 10:48:38,050] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-13 10:48:45,003] - [django.request:log_response:241] Not Found: /password_reset/
+WARNING [2022-06-13 10:48:45,006] - [django.server:log_message:187] "GET /password_reset/ HTTP/1.1" 404 4274
+ERROR [2022-06-13 10:48:56,926] - [django.request:log_response:241] Internal Server Error: /password-reset/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/password_reset.html
+ERROR [2022-06-13 10:48:56,928] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 500 81600
+INFO [2022-06-13 10:49:41,881] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-13 10:49:42,368] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 10:49:44,039] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 787
+INFO [2022-06-13 10:51:25,594] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/models.py changed, reloading.
+INFO [2022-06-13 10:51:26,078] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 10:52:36,629] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 10:53:00,330] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 1011
+WARNING [2022-06-13 10:53:28,593] - [django.request:log_response:241] Not Found: /reset-password/
+WARNING [2022-06-13 10:53:28,594] - [django.server:log_message:187] "GET /reset-password/ HTTP/1.1" 404 4274
+INFO [2022-06-13 10:53:40,845] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 787
+ERROR [2022-06-13 10:53:58,219] - [django.request:log_response:241] Internal Server Error: /password-reset/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 232, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 245, in form_valid
+    form.save(**opts)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 343, in save
+    self.send_mail(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 284, in send_mail
+    email_message.send()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 131, in send_messages
+    sent = self._send(message)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 149, in _send
+    self.connection.sendmail(
+  File "/usr/local/lib/python3.10/smtplib.py", line 887, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+smtplib.SMTPSenderRefused: (530, b'5.7.0 Authentication Required. Learn more at\n5.7.0  https://support.google.com/mail/?p=WantAuthError r27-20020ac25a5b000000b0047255d2118esm939652lfn.189 - gsmtp', 'webmaster@localhost')
+ERROR [2022-06-13 10:53:58,221] - [django.server:log_message:187] "POST /password-reset/ HTTP/1.1" 500 130208
+INFO [2022-06-13 10:55:57,166] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 10:55:57,899] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 10:56:05,915] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 950
+ERROR [2022-06-13 10:56:23,219] - [django.request:log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 46, in post
+    'message': message
+UnboundLocalError: local variable 'message' referenced before assignment
+ERROR [2022-06-13 10:56:23,221] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 500 76483
+INFO [2022-06-13 10:56:47,938] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 10:56:48,431] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-13 10:56:51,007] - [django.request:log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 46, in post
+    'message': message
+NameError: name 'message' is not defined
+ERROR [2022-06-13 10:56:51,009] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 500 76339
+INFO [2022-06-13 10:56:59,131] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 10:56:59,835] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 10:57:01,144] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 998
+INFO [2022-06-13 10:58:11,652] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 10:58:12,242] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 10:58:17,196] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 998
+INFO [2022-06-13 11:00:51,144] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 11:00:51,710] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 11:00:54,127] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 998
+INFO [2022-06-13 11:00:58,247] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 998
+INFO [2022-06-13 11:01:40,999] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 998
+INFO [2022-06-13 11:01:59,856] - [django.server:log_message:187] "GET /swagger/ HTTP/1.1" 200 2232
+INFO [2022-06-13 11:02:02,884] - [django.server:log_message:187] "GET /sign_up HTTP/1.1" 301 0
+INFO [2022-06-13 11:02:02,911] - [django.server:log_message:187] "GET /sign_up/ HTTP/1.1" 200 1943
+INFO [2022-06-13 11:02:36,556] - [django.server:log_message:187] "POST /sign_up/ HTTP/1.1" 200 2099
+INFO [2022-06-13 11:02:42,722] - [django.server:log_message:187] "GET /admin HTTP/1.1" 301 0
+INFO [2022-06-13 11:02:42,731] - [django.server:log_message:187] "GET /admin/ HTTP/1.1" 302 0
+INFO [2022-06-13 11:02:42,750] - [django.server:log_message:187] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+INFO [2022-06-13 11:02:42,842] - [django.server:log_message:187] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2616
+INFO [2022-06-13 11:02:42,842] - [django.server:log_message:187] "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+INFO [2022-06-13 11:02:42,842] - [django.server:log_message:187] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+INFO [2022-06-13 11:02:42,843] - [django.server:log_message:187] "GET /static/admin/css/login.css HTTP/1.1" 200 954
+INFO [2022-06-13 11:02:42,844] - [django.server:log_message:187] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18575
+INFO [2022-06-13 11:02:43,354] - [django.server:log_message:187] "GET /admin/ HTTP/1.1" 302 0
+INFO [2022-06-13 11:02:43,378] - [django.server:log_message:187] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+INFO [2022-06-13 11:02:43,406] - [django.server:log_message:187] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO [2022-06-13 11:02:43,455] - [django.server:log_message:187] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO [2022-06-13 11:02:43,455] - [django.server:log_message:187] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO [2022-06-13 11:02:45,155] - [django.server:log_message:187] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO [2022-06-13 11:02:45,177] - [django.server:log_message:187] "GET /admin/ HTTP/1.1" 200 2923
+INFO [2022-06-13 11:02:45,240] - [django.server:log_message:187] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO [2022-06-13 11:02:45,257] - [django.server:log_message:187] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO [2022-06-13 11:02:45,257] - [django.server:log_message:187] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO [2022-06-13 11:02:45,281] - [django.server:log_message:187] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+WARNING [2022-06-13 11:04:32,327] - [django.request:log_response:241] Not Found: /pass/
+WARNING [2022-06-13 11:04:32,329] - [django.server:log_message:187] "GET /pass/ HTTP/1.1" 404 4244
+INFO [2022-06-13 11:04:37,860] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 787
+ERROR [2022-06-13 11:04:54,346] - [django.request:log_response:241] Internal Server Error: /password-reset/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 232, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 245, in form_valid
+    form.save(**opts)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 343, in save
+    self.send_mail(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 284, in send_mail
+    email_message.send()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 131, in send_messages
+    sent = self._send(message)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 149, in _send
+    self.connection.sendmail(
+  File "/usr/local/lib/python3.10/smtplib.py", line 887, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+smtplib.SMTPSenderRefused: (530, b'5.7.0 Authentication Required. Learn more at\n5.7.0  https://support.google.com/mail/?p=WantAuthError w14-20020a05651234ce00b00477b11144e9sm947237lfr.66 - gsmtp', 'webmaster@localhost')
+ERROR [2022-06-13 11:04:54,347] - [django.server:log_message:187] "POST /password-reset/ HTTP/1.1" 500 130418
+INFO [2022-06-13 11:06:05,799] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/config/settings.py changed, reloading.
+INFO [2022-06-13 11:06:06,415] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-13 11:06:10,637] - [django.request:log_response:241] Internal Server Error: /password-reset/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 232, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 245, in form_valid
+    form.save(**opts)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 343, in save
+    self.send_mail(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 284, in send_mail
+    email_message.send()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/message.py", line 255, in get_connection
+    self.connection = get_connection(fail_silently=fail_silently)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/__init__.py", line 51, in get_connection
+    return klass(fail_silently=fail_silently, **kwds)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 46, in __init__
+    raise ValueError(
+ValueError: EMAIL_USE_TLS/EMAIL_USE_SSL are mutually exclusive, so only set one of those settings to True.
+ERROR [2022-06-13 11:06:10,638] - [django.server:log_message:187] "POST /password-reset/ HTTP/1.1" 500 128602
+INFO [2022-06-13 11:06:42,641] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/config/settings.py changed, reloading.
+INFO [2022-06-13 11:06:43,288] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-13 11:06:46,620] - [django.request:log_response:241] Internal Server Error: /password-reset/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 232, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 245, in form_valid
+    form.save(**opts)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 343, in save
+    self.send_mail(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 284, in send_mail
+    email_message.send()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/message.py", line 255, in get_connection
+    self.connection = get_connection(fail_silently=fail_silently)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/__init__.py", line 51, in get_connection
+    return klass(fail_silently=fail_silently, **kwds)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 46, in __init__
+    raise ValueError(
+ValueError: EMAIL_USE_TLS/EMAIL_USE_SSL are mutually exclusive, so only set one of those settings to True.
+ERROR [2022-06-13 11:06:46,621] - [django.server:log_message:187] "POST /password-reset/ HTTP/1.1" 500 128322
+INFO [2022-06-13 11:08:28,311] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-13 11:08:32,464] - [django.request:log_response:241] Internal Server Error: /password-reset/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 232, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 245, in form_valid
+    form.save(**opts)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 343, in save
+    self.send_mail(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 284, in send_mail
+    email_message.send()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 80, in open
+    self.connection = self.connection_class(
+  File "/usr/local/lib/python3.10/smtplib.py", line 1050, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+  File "/usr/local/lib/python3.10/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.10/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.10/smtplib.py", line 1057, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+  File "/usr/local/lib/python3.10/ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/usr/local/lib/python3.10/ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "/usr/local/lib/python3.10/ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)
+ERROR [2022-06-13 11:08:32,466] - [django.server:log_message:187] "POST /password-reset/ HTTP/1.1" 500 155268
+ERROR [2022-06-13 11:09:24,117] - [django.request:log_response:241] Internal Server Error: /password-reset/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 232, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 245, in form_valid
+    form.save(**opts)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 343, in save
+    self.send_mail(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 284, in send_mail
+    email_message.send()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 80, in open
+    self.connection = self.connection_class(
+  File "/usr/local/lib/python3.10/smtplib.py", line 1050, in __init__
+    SMTP.__init__(self, host, port, local_hostname, timeout,
+  File "/usr/local/lib/python3.10/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.10/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.10/smtplib.py", line 1057, in _get_socket
+    new_socket = self.context.wrap_socket(new_socket,
+  File "/usr/local/lib/python3.10/ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/usr/local/lib/python3.10/ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "/usr/local/lib/python3.10/ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)
+ERROR [2022-06-13 11:09:24,118] - [django.server:log_message:187] "POST /password-reset/ HTTP/1.1" 500 155268
+INFO [2022-06-13 11:10:59,275] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-13 11:11:05,390] - [django.request:log_response:241] Internal Server Error: /password-reset/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 232, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 245, in form_valid
+    form.save(**opts)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 343, in save
+    self.send_mail(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 284, in send_mail
+    email_message.send()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 131, in send_messages
+    sent = self._send(message)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 149, in _send
+    self.connection.sendmail(
+  File "/usr/local/lib/python3.10/smtplib.py", line 887, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+smtplib.SMTPSenderRefused: (530, b'5.7.0 Authentication Required. Learn more at\n5.7.0  https://support.google.com/mail/?p=WantAuthError f13-20020a19380d000000b0047255d21179sm947729lfa.168 - gsmtp', 'webmaster@localhost')
+ERROR [2022-06-13 11:11:05,392] - [django.server:log_message:187] "POST /password-reset/ HTTP/1.1" 500 130159
+INFO [2022-06-13 11:13:14,507] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-13 11:13:17,767] - [django.request:log_response:241] Not Found: /
+WARNING [2022-06-13 11:13:17,768] - [django.server:log_message:187] "GET / HTTP/1.1" 404 4211
+INFO [2022-06-13 11:13:24,636] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 950
+INFO [2022-06-13 11:13:41,002] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 998
+INFO [2022-06-13 11:13:50,807] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 787
+ERROR [2022-06-13 11:14:04,037] - [django.request:log_response:241] Internal Server Error: /password-reset/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 232, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 245, in form_valid
+    form.save(**opts)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 343, in save
+    self.send_mail(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 284, in send_mail
+    email_message.send()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 91, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/local/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/local/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/usr/local/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials c18-20020a056512105200b00478f1bd611csm942514lfb.284 - gsmtp')
+ERROR [2022-06-13 11:14:04,039] - [django.server:log_message:187] "POST /password-reset/ HTTP/1.1" 500 139678
