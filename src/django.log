@@ -10,3 +10,267 @@ INFO [2022-06-13 06:57:12,686] - [django.utils.autoreload:run_with_reloader:677]
 WARNING [2022-06-13 06:57:16,334] - [django.request:log_response:241] Not Found: /
 WARNING [2022-06-13 06:57:16,335] - [django.server:log_message:187] "GET / HTTP/1.1" 404 2891
 INFO [2022-06-13 07:06:47,819] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 08:12:25,500] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-13 08:12:35,889] - [django.request:log_response:241] Not Found: /
+WARNING [2022-06-13 08:12:35,890] - [django.server:log_message:187] "GET / HTTP/1.1" 404 2891
+INFO [2022-06-13 08:13:18,057] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/config/urls.py changed, reloading.
+INFO [2022-06-13 08:13:18,627] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 08:52:01,226] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-13 08:52:04,673] - [django.request:http_method_not_allowed:122] Method Not Allowed (GET): /login/
+WARNING [2022-06-13 08:52:04,674] - [django.request:log_response:241] Method Not Allowed: /login/
+WARNING [2022-06-13 08:52:04,674] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 405 0
+WARNING [2022-06-13 08:52:06,099] - [django.request:http_method_not_allowed:122] Method Not Allowed (GET): /login/
+WARNING [2022-06-13 08:52:06,100] - [django.request:log_response:241] Method Not Allowed: /login/
+WARNING [2022-06-13 08:52:06,108] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 405 0
+INFO [2022-06-13 08:52:30,094] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-13 08:52:30,741] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 08:52:58,512] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 08:52:59,222] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-13 08:53:04,118] - [django.request:log_response:241] Not Found: /login/
+WARNING [2022-06-13 08:53:04,119] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 404 3093
+ERROR [2022-06-13 08:53:11,485] - [django.request:log_response:241] Internal Server Error: /login
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: LoginPageView.get() takes 1 positional argument but 2 were given
+ERROR [2022-06-13 08:53:11,486] - [django.server:log_message:187] "GET /login HTTP/1.1" 500 70874
+INFO [2022-06-13 08:53:33,410] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 08:53:34,098] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-13 08:53:35,103] - [django.request:log_response:241] Internal Server Error: /login
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: LoginPageView.get() takes 1 positional argument but 2 were given
+ERROR [2022-06-13 08:53:35,104] - [django.server:log_message:187] "GET /login HTTP/1.1" 500 70790
+INFO [2022-06-13 08:55:29,749] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 08:55:30,254] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-13 08:55:34,701] - [django.request:log_response:241] Internal Server Error: /login
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: LoginPageView.get() takes 1 positional argument but 2 were given
+ERROR [2022-06-13 08:55:34,703] - [django.server:log_message:187] "GET /login HTTP/1.1" 500 70790
+ERROR [2022-06-13 08:55:35,423] - [django.request:log_response:241] Internal Server Error: /login
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: LoginPageView.get() takes 1 positional argument but 2 were given
+ERROR [2022-06-13 08:55:35,423] - [django.server:log_message:187] "GET /login HTTP/1.1" 500 70790
+ERROR [2022-06-13 08:55:35,864] - [django.request:log_response:241] Internal Server Error: /login
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: LoginPageView.get() takes 1 positional argument but 2 were given
+ERROR [2022-06-13 08:55:35,864] - [django.server:log_message:187] "GET /login HTTP/1.1" 500 70790
+ERROR [2022-06-13 08:55:36,024] - [django.request:log_response:241] Internal Server Error: /login
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: LoginPageView.get() takes 1 positional argument but 2 were given
+ERROR [2022-06-13 08:55:36,026] - [django.server:log_message:187] "GET /login HTTP/1.1" 500 70790
+ERROR [2022-06-13 08:55:36,186] - [django.request:log_response:241] Internal Server Error: /login
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: LoginPageView.get() takes 1 positional argument but 2 were given
+ERROR [2022-06-13 08:55:36,187] - [django.server:log_message:187] "GET /login HTTP/1.1" 500 70790
+ERROR [2022-06-13 08:55:36,395] - [django.request:log_response:241] Internal Server Error: /login
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: LoginPageView.get() takes 1 positional argument but 2 were given
+ERROR [2022-06-13 08:55:36,396] - [django.server:log_message:187] "GET /login HTTP/1.1" 500 70790
+ERROR [2022-06-13 08:55:36,565] - [django.request:log_response:241] Internal Server Error: /login
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: LoginPageView.get() takes 1 positional argument but 2 were given
+ERROR [2022-06-13 08:55:36,566] - [django.server:log_message:187] "GET /login HTTP/1.1" 500 70790
+ERROR [2022-06-13 08:55:36,786] - [django.request:log_response:241] Internal Server Error: /login
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: LoginPageView.get() takes 1 positional argument but 2 were given
+ERROR [2022-06-13 08:55:36,788] - [django.server:log_message:187] "GET /login HTTP/1.1" 500 70790
+INFO [2022-06-13 08:57:21,882] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 08:57:22,499] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 08:57:45,151] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 08:57:45,628] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 08:58:17,449] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 08:58:18,090] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-13 08:58:32,384] - [django.request:log_response:241] Internal Server Error: /login
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 8, in login_page
+    form = forms.LoginForm()
+NameError: name 'forms' is not defined
+ERROR [2022-06-13 08:58:32,386] - [django.server:log_message:187] "GET /login HTTP/1.1" 500 64983
+INFO [2022-06-13 08:58:54,176] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 08:58:54,733] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 08:59:03,156] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 08:59:03,690] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 08:59:04,867] - [django.server:log_message:187] "GET /login HTTP/1.1" 200 382
+INFO [2022-06-13 09:01:07,976] - [django.server:log_message:187] "GET /login HTTP/1.1" 200 1332
+INFO [2022-06-13 09:06:59,127] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:07:00,390] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:09:31,105] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:09:31,872] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:09:36,385] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:09:36,890] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:09:41,263] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:09:41,772] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:09:59,513] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:10:00,311] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:10:15,176] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:10:15,761] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:10:18,200] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:10:19,157] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:10:20,526] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:10:21,180] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:10:42,008] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:10:42,889] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:11:22,381] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:11:23,566] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:11:49,926] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:11:50,945] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:11:59,515] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:12:00,033] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:12:17,657] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-13 09:12:18,194] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-13 09:12:20,135] - [django.request:log_response:241] Internal Server Error: /login
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: LoginPageView.get() takes 1 positional argument but 2 were given
+ERROR [2022-06-13 09:12:20,136] - [django.server:log_message:187] "GET /login HTTP/1.1" 500 70790
+ERROR [2022-06-13 09:12:21,096] - [django.request:log_response:241] Internal Server Error: /login
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: LoginPageView.get() takes 1 positional argument but 2 were given
+ERROR [2022-06-13 09:12:21,097] - [django.server:log_message:187] "GET /login HTTP/1.1" 500 70790
+ERROR [2022-06-13 09:12:21,484] - [django.request:log_response:241] Internal Server Error: /login
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: LoginPageView.get() takes 1 positional argument but 2 were given
+ERROR [2022-06-13 09:12:21,484] - [django.server:log_message:187] "GET /login HTTP/1.1" 500 70790
+ERROR [2022-06-13 09:12:21,649] - [django.request:log_response:241] Internal Server Error: /login
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: LoginPageView.get() takes 1 positional argument but 2 were given
+ERROR [2022-06-13 09:12:21,651] - [django.server:log_message:187] "GET /login HTTP/1.1" 500 70790
+ERROR [2022-06-13 09:12:21,827] - [django.request:log_response:241] Internal Server Error: /login
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: LoginPageView.get() takes 1 positional argument but 2 were given
+ERROR [2022-06-13 09:12:21,828] - [django.server:log_message:187] "GET /login HTTP/1.1" 500 70790
+INFO [2022-06-13 09:13:10,749] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:13:11,323] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:13:15,039] - [django.server:log_message:187] "GET /login HTTP/1.1" 200 1332
+INFO [2022-06-13 09:15:00,164] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-13 09:15:00,829] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:15:02,772] - [django.server:log_message:187] "GET /login HTTP/1.1" 200 1446
+INFO [2022-06-13 09:16:43,242] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-13 09:16:43,819] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:16:50,736] - [django.server:log_message:187] "GET /login HTTP/1.1" 200 1332
+INFO [2022-06-13 09:19:45,870] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:19:46,521] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:19:54,963] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-13 09:19:55,597] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-13 09:19:59,940] - [django.server:log_message:187] "GET /login HTTP/1.1" 200 1332
