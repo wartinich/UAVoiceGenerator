@@ -2202,3 +2202,17 @@ INFO [2022-06-14 13:15:36,922] - [django.server:log_message:187] "GET /change-pa
 INFO [2022-06-14 13:15:37,564] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 771
 INFO [2022-06-14 13:19:08,613] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 1553
 INFO [2022-06-14 13:20:11,245] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 982
+INFO [2022-06-14 13:29:34,103] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 13:29:54,980] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1640
+INFO [2022-06-14 13:29:59,375] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1275
+INFO [2022-06-14 13:30:04,101] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 1518
+INFO [2022-06-14 13:33:50,649] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-14 13:33:51,467] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 13:34:45,908] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-14 13:34:46,592] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 13:36:13,952] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-14 13:36:14,570] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 13:36:17,066] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 1509
+INFO [2022-06-14 13:36:55,855] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 1509
+INFO [2022-06-14 13:37:12,082] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 1509
+INFO [2022-06-14 13:37:34,671] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 1509
