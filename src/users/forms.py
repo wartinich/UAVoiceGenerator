@@ -21,7 +21,3 @@ class LoginUserForm(AuthenticationForm):
     username = forms.CharField(required=True)
     email = forms.EmailField(required=True, widget=forms.EmailInput())
     password = forms.CharField(required=True, widget=forms.PasswordInput())
-
-    class Meta:
-        model = User
-        fields = ['username', 'email', 'password']

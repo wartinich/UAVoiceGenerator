@@ -1476,3 +1476,249 @@ INFO [2022-06-14 05:59:40,034] - [django.server:log_message:187] "GET /admin/use
 INFO [2022-06-14 05:59:40,061] - [django.server:log_message:187] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 INFO [2022-06-14 06:00:10,865] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/admin.py changed, reloading.
 INFO [2022-06-14 06:00:11,407] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:03:11,718] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-14 06:03:55,237] - [django.request:log_response:241] Not Found: /
+WARNING [2022-06-14 06:03:55,238] - [django.server:log_message:187] "GET / HTTP/1.1" 404 4211
+INFO [2022-06-14 06:04:00,974] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1047
+INFO [2022-06-14 06:04:19,208] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 12
+INFO [2022-06-14 06:06:47,224] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:06:47,790] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:10:08,799] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:10:09,364] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:10:40,232] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:10:41,039] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:11:29,274] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:11:30,022] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:11:48,665] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-14 06:11:49,213] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-14 06:11:51,210] - [django.request:log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 34, in LoginPageView
+    return render(request=request, template_name="main/login.html", context={"login_form":form})
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main/login.html
+ERROR [2022-06-14 06:11:51,211] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 500 82360
+INFO [2022-06-14 06:12:06,018] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:12:06,498] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:12:08,253] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 613
+INFO [2022-06-14 06:12:23,234] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:12:23,691] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:12:25,529] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1006
+ERROR [2022-06-14 06:12:29,893] - [django.request:log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 27, in LoginPageView
+    messages.info(request, f"You are now logged in as {username}.")
+NameError: name 'messages' is not defined
+ERROR [2022-06-14 06:12:29,894] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 500 68174
+INFO [2022-06-14 06:13:08,114] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:13:08,576] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-14 06:13:11,233] - [django.security.csrf:log_response:241] Forbidden (CSRF token from POST incorrect.): /login/
+WARNING [2022-06-14 06:13:11,234] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 403 2518
+INFO [2022-06-14 06:13:14,585] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1006
+ERROR [2022-06-14 06:13:16,423] - [django.request:log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'main'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 29, in LoginPageView
+    return redirect("main:homepage")
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'main' is not a registered namespace
+ERROR [2022-06-14 06:13:16,424] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 500 88805
+INFO [2022-06-14 06:13:28,499] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:13:28,969] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-14 06:13:31,119] - [django.security.csrf:log_response:241] Forbidden (CSRF token from POST incorrect.): /login/
+WARNING [2022-06-14 06:13:31,119] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 403 2518
+INFO [2022-06-14 06:13:33,113] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1006
+ERROR [2022-06-14 06:13:34,754] - [django.request:log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 29, in LoginPageView
+    return redirect("admin")
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'admin' not found. 'admin' is not a valid view function or pattern name.
+ERROR [2022-06-14 06:13:34,757] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 500 87033
+INFO [2022-06-14 06:13:59,250] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-14 06:13:59,852] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:14:21,758] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:14:22,339] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-14 06:14:24,955] - [django.security.csrf:log_response:241] Forbidden (CSRF token from POST incorrect.): /login/
+WARNING [2022-06-14 06:14:24,956] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 403 2518
+INFO [2022-06-14 06:14:27,099] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1047
+INFO [2022-06-14 06:15:42,603] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:15:43,114] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:16:38,581] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:16:39,327] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:16:47,790] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-14 06:16:48,421] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:16:49,374] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1047
+INFO [2022-06-14 06:17:02,578] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 1047
+INFO [2022-06-14 06:17:30,807] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:17:31,344] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:17:45,622] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 1047
+INFO [2022-06-14 06:18:17,993] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:18:18,832] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:18:22,085] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-14 06:18:22,703] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-14 06:18:25,160] - [django.request:log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 29, in LoginPageView
+    return redirect("admin")
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'admin' not found. 'admin' is not a valid view function or pattern name.
+ERROR [2022-06-14 06:18:25,162] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 500 87310
+INFO [2022-06-14 06:18:57,895] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:18:58,517] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-14 06:19:00,289] - [django.security.csrf:log_response:241] Forbidden (CSRF token from POST incorrect.): /login/
+WARNING [2022-06-14 06:19:00,290] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 403 2518
+INFO [2022-06-14 06:19:04,464] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1047
+INFO [2022-06-14 06:19:07,551] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 302 0
+INFO [2022-06-14 06:19:07,558] - [django.server:log_message:187] "GET /swagger/ HTTP/1.1" 200 2232
+INFO [2022-06-14 06:19:07,586] - [django.server:log_message:187] "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO [2022-06-14 06:19:07,587] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO [2022-06-14 06:19:07,590] - [django.server:log_message:187] "GET /static/drf-yasg/url-polyfill.min.js HTTP/1.1" 304 0
+INFO [2022-06-14 06:19:07,610] - [django.server:log_message:187] "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO [2022-06-14 06:19:07,611] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO [2022-06-14 06:19:07,612] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO [2022-06-14 06:19:07,612] - [django.server:log_message:187] "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO [2022-06-14 06:19:07,613] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO [2022-06-14 06:19:07,772] - [django.server:log_message:187] "GET /swagger/?format=openapi HTTP/1.1" 200 2302
+INFO [2022-06-14 06:21:05,056] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:21:05,682] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:21:31,641] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-14 06:21:32,279] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:21:34,690] - [django.server:log_message:187] "GET /logout/ HTTP/1.1" 200 613
+INFO [2022-06-14 06:21:43,591] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1047
+ERROR [2022-06-14 06:21:56,032] - [django.request:log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 65, in post
+    'form': self.form_class
+AttributeError: 'LoginPageView' object has no attribute 'form_class'
+ERROR [2022-06-14 06:21:56,033] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 500 76717
+INFO [2022-06-14 06:22:16,011] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:22:16,471] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:22:20,868] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 1047
+INFO [2022-06-14 06:22:33,837] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 1047
+INFO [2022-06-14 06:23:03,003] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:23:03,537] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-14 06:23:19,413] - [django.request:log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 58, in post
+    return redirect("admin")
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 802, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'admin' not found. 'admin' is not a valid view function or pattern name.
+ERROR [2022-06-14 06:23:19,418] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 500 96345
+INFO [2022-06-14 06:23:44,043] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:23:44,689] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-14 06:23:46,216] - [django.security.csrf:log_response:241] Forbidden (CSRF token from POST incorrect.): /login/
+WARNING [2022-06-14 06:23:46,217] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 403 2518
+INFO [2022-06-14 06:23:48,238] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1047
+INFO [2022-06-14 06:23:50,050] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 302 0
+INFO [2022-06-14 06:23:50,057] - [django.server:log_message:187] "GET /swagger/ HTTP/1.1" 200 2232
+INFO [2022-06-14 06:23:50,269] - [django.server:log_message:187] "GET /swagger/?format=openapi HTTP/1.1" 200 2302
+INFO [2022-06-14 06:25:23,503] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:25:24,113] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:25:24,788] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1047
+INFO [2022-06-14 06:25:26,574] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 302 0
+INFO [2022-06-14 06:25:26,581] - [django.server:log_message:187] "GET /swagger/ HTTP/1.1" 200 2232
+INFO [2022-06-14 06:25:26,712] - [django.server:log_message:187] "GET /swagger/?format=openapi HTTP/1.1" 200 2302
+INFO [2022-06-14 06:26:10,497] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:26:11,149] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:26:12,401] - [django.server:log_message:187] "GET /swagger/ HTTP/1.1" 200 2232
+INFO [2022-06-14 06:26:12,566] - [django.server:log_message:187] "GET /swagger/?format=openapi HTTP/1.1" 200 2302
+INFO [2022-06-14 06:26:12,571] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
+INFO [2022-06-14 06:26:13,085] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1047
+INFO [2022-06-14 06:26:15,001] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 302 0
+INFO [2022-06-14 06:26:15,008] - [django.server:log_message:187] "GET /swagger/ HTTP/1.1" 200 2232
+INFO [2022-06-14 06:26:15,131] - [django.server:log_message:187] "GET /swagger/?format=openapi HTTP/1.1" 200 2302
+INFO [2022-06-14 06:27:14,986] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:27:15,629] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:27:27,240] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:27:27,677] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:30:56,849] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:30:57,728] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:31:30,662] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:31:31,160] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:32:17,440] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:32:17,937] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:33:07,146] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:33:07,680] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:33:22,114] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-14 06:33:23,105] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:33:47,773] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-14 06:33:48,272] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:33:57,762] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-14 06:33:58,282] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:34:15,786] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-14 06:34:16,268] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:34:18,585] - [django.server:log_message:187] "GET /sign_up/ HTTP/1.1" 200 1943
