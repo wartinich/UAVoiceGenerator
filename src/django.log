@@ -2028,3 +2028,5 @@ INFO [2022-06-14 11:50:59,142] - [django.utils.autoreload:trigger_reload:266] /h
 INFO [2022-06-14 11:50:59,801] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
 INFO [2022-06-14 11:51:01,122] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
 INFO [2022-06-14 11:51:01,954] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 11:54:12,048] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-14 11:54:12,758] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader

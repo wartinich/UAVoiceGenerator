@@ -27,12 +27,16 @@ class LoginUserForm(AuthenticationForm):
 
 class UpdateUserForm(forms.ModelForm):
     """Update User"""
-    username = forms.CharField()
-    email = forms.EmailField()
+    email = forms.EmailField(widget=forms.EmailInput(attrs={'placeholder': 'Email'}))
+    username = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Username'}))
+    first_name = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'First name'}))
+    last_name = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Last name'}))
+    birth_date = forms.DateField(widget=forms.DateInput(attrs={'type': 'date'}))
+    avatar_image = forms.ImageField(widget=forms.FileInput())
 
     class Meta:
         model = User
-        fields = ['username', 'email']
+        fields = ['email', 'username', 'first_name', 'last_name', 'last_name', 'birth_date', 'avatar_image']
 
 
 
