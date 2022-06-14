@@ -1868,3 +1868,100 @@ INFO [2022-06-14 08:18:17,496] - [django.utils.autoreload:run_with_reloader:677]
 INFO [2022-06-14 08:18:26,921] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
 INFO [2022-06-14 08:18:27,585] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
 INFO [2022-06-14 08:18:28,438] - [django.server:log_message:187] "GET /sign_up/ HTTP/1.1" 200 2125
+INFO [2022-06-14 08:20:17,896] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 08:20:54,277] - [django.server:log_message:187] "GET /sign_up/ HTTP/1.1" 200 2125
+WARNING [2022-06-14 08:34:46,364] - [django.request:log_response:241] Not Found: /
+WARNING [2022-06-14 08:34:46,365] - [django.server:log_message:187] "GET / HTTP/1.1" 404 4211
+INFO [2022-06-14 08:34:52,216] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 817
+ERROR [2022-06-14 08:35:09,693] - [django.request:log_response:241] Internal Server Error: /password-reset/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 232, in dispatch
+    return super().dispatch(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/views.py", line 245, in form_valid
+    form.save(**opts)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 343, in save
+    self.send_mail(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 284, in send_mail
+    email_message.send()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 91, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/local/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/local/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/usr/local/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials g2-20020a056512118200b00477c164293csm1308141lfr.79 - gsmtp')
+ERROR [2022-06-14 08:35:09,694] - [django.server:log_message:187] "POST /password-reset/ HTTP/1.1" 500 140201
+INFO [2022-06-14 08:42:28,395] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/config/settings.py changed, reloading.
+INFO [2022-06-14 08:42:28,968] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 08:45:28,848] - [django.server:log_message:187] "POST /password-reset/ HTTP/1.1" 302 0
+INFO [2022-06-14 08:45:28,855] - [django.server:log_message:187] "GET /password-reset/done/ HTTP/1.1" 200 522
+INFO [2022-06-14 08:46:49,057] - [django.server:log_message:187] "GET /password-reset-confirm/Mg/b702zs-59575115bc2c069b72140883e3f280e4/ HTTP/1.1" 302 0
+INFO [2022-06-14 08:46:49,095] - [django.server:log_message:187] "GET /password-reset-confirm/Mg/set-password/ HTTP/1.1" 200 1503
+INFO [2022-06-14 08:47:20,224] - [django.server:log_message:187] "POST /password-reset-confirm/Mg/set-password/ HTTP/1.1" 200 1567
+INFO [2022-06-14 08:47:30,023] - [django.server:log_message:187] "GET /admin/ HTTP/1.1" 200 4335
+INFO [2022-06-14 08:47:30,079] - [django.server:log_message:187] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:30,080] - [django.server:log_message:187] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:30,085] - [django.server:log_message:187] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:30,086] - [django.server:log_message:187] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:30,086] - [django.server:log_message:187] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:30,759] - [django.server:log_message:187] "GET /admin/ HTTP/1.1" 200 3554
+INFO [2022-06-14 08:47:30,795] - [django.server:log_message:187] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:30,835] - [django.server:log_message:187] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:30,835] - [django.server:log_message:187] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:30,859] - [django.server:log_message:187] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:30,861] - [django.server:log_message:187] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:30,863] - [django.server:log_message:187] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:35,541] - [django.server:log_message:187] "GET /admin/users/user/ HTTP/1.1" 200 7976
+INFO [2022-06-14 08:47:35,568] - [django.server:log_message:187] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:35,569] - [django.server:log_message:187] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:35,569] - [django.server:log_message:187] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:35,570] - [django.server:log_message:187] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:35,581] - [django.server:log_message:187] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:35,583] - [django.server:log_message:187] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:35,588] - [django.server:log_message:187] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:35,592] - [django.server:log_message:187] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO [2022-06-14 08:47:35,592] - [django.server:log_message:187] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:35,596] - [django.server:log_message:187] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:35,651] - [django.server:log_message:187] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:35,680] - [django.server:log_message:187] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO [2022-06-14 08:47:35,687] - [django.server:log_message:187] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO [2022-06-14 09:06:46,338] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1017
+INFO [2022-06-14 09:08:42,313] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1159
+INFO [2022-06-14 09:08:43,304] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1159
+INFO [2022-06-14 09:09:20,391] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1183
+INFO [2022-06-14 09:10:07,856] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1183
+INFO [2022-06-14 09:10:26,651] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1184
+INFO [2022-06-14 09:10:27,539] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1184
+INFO [2022-06-14 09:10:28,283] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1184
+INFO [2022-06-14 09:10:32,584] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1184
+INFO [2022-06-14 09:10:40,686] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1183
+INFO [2022-06-14 09:11:21,761] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1294
+INFO [2022-06-14 09:11:49,646] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1392
+INFO [2022-06-14 09:14:33,260] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1392
+INFO [2022-06-14 09:14:41,138] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1392
+INFO [2022-06-14 09:21:27,440] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1469
+INFO [2022-06-14 09:21:43,464] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1469
+INFO [2022-06-14 09:21:48,978] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1469
+INFO [2022-06-14 09:21:58,949] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1467
+INFO [2022-06-14 09:22:24,855] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1467
+INFO [2022-06-14 09:22:35,248] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1467

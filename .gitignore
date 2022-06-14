@@ -33,3 +33,5 @@ doc
 home.rst
 
 .pytest_cache
+
+files/
