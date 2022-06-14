@@ -1965,3 +1965,4 @@ INFO [2022-06-14 09:21:48,978] - [django.server:log_message:187] "GET /password-
 INFO [2022-06-14 09:21:58,949] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1467
 INFO [2022-06-14 09:22:24,855] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1467
 INFO [2022-06-14 09:22:35,248] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1467
+INFO [2022-06-14 10:07:44,057] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
