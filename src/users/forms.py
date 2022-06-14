@@ -1,6 +1,6 @@
 from django import forms
 from users.models import User
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 
 
 class RegisterForm(UserCreationForm):
@@ -16,7 +16,7 @@ class RegisterForm(UserCreationForm):
         fields = ['username', 'email', 'first_name', 'last_name', 'birth_date', 'sex', 'password1', 'password2']
 
 
-class LoginUserForm(forms.ModelForm):
+class LoginUserForm(AuthenticationForm):
     """Login Form"""
     username = forms.CharField(required=True)
     email = forms.EmailField(required=True, widget=forms.EmailInput())

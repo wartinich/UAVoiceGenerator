@@ -998,3 +998,481 @@ INFO [2022-06-13 12:20:33,606] - [django.utils.autoreload:trigger_reload:266] /h
 INFO [2022-06-13 12:20:34,250] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
 INFO [2022-06-13 12:21:00,089] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 12
 INFO [2022-06-13 12:21:03,377] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 12
+INFO [2022-06-13 12:26:40,490] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 05:52:36,454] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 05:52:42,528] - [django.server:log_message:187] "GET /admin/ HTTP/1.1" 302 0
+INFO [2022-06-14 05:52:42,564] - [django.server:log_message:187] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+INFO [2022-06-14 05:52:42,599] - [django.server:log_message:187] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO [2022-06-14 05:52:42,604] - [django.server:log_message:187] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO [2022-06-14 05:52:42,605] - [django.server:log_message:187] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO [2022-06-14 05:52:42,609] - [django.server:log_message:187] "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO [2022-06-14 05:52:42,613] - [django.server:log_message:187] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO [2022-06-14 05:52:43,902] - [django.server:log_message:187] "GET /admin/ HTTP/1.1" 302 0
+INFO [2022-06-14 05:52:43,926] - [django.server:log_message:187] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+INFO [2022-06-14 05:52:43,970] - [django.server:log_message:187] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO [2022-06-14 05:52:44,022] - [django.server:log_message:187] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO [2022-06-14 05:52:44,023] - [django.server:log_message:187] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO [2022-06-14 05:52:45,595] - [django.server:log_message:187] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO [2022-06-14 05:52:45,620] - [django.server:log_message:187] "GET /admin/ HTTP/1.1" 200 3554
+INFO [2022-06-14 05:52:45,633] - [django.server:log_message:187] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO [2022-06-14 05:52:45,661] - [django.server:log_message:187] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO [2022-06-14 05:52:45,664] - [django.server:log_message:187] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO [2022-06-14 05:52:45,694] - [django.server:log_message:187] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO [2022-06-14 05:52:47,274] - [django.server:log_message:187] "GET /admin/users/user/ HTTP/1.1" 200 6924
+INFO [2022-06-14 05:52:47,337] - [django.server:log_message:187] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+INFO [2022-06-14 05:52:47,339] - [django.server:log_message:187] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6932
+INFO [2022-06-14 05:52:47,343] - [django.server:log_message:187] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO [2022-06-14 05:52:47,343] - [django.server:log_message:187] "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO [2022-06-14 05:52:47,351] - [django.server:log_message:187] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO [2022-06-14 05:52:47,351] - [django.server:log_message:187] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO [2022-06-14 05:52:47,353] - [django.server:log_message:187] "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO [2022-06-14 05:52:47,355] - [django.server:log_message:187] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO [2022-06-14 05:52:47,365] - [django.server:log_message:187] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO [2022-06-14 05:52:47,366] - [django.server:log_message:187] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+INFO [2022-06-14 05:52:47,411] - [django.server:log_message:187] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO [2022-06-14 05:52:47,446] - [django.server:log_message:187] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO [2022-06-14 05:53:24,784] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/admin.py changed, reloading.
+INFO [2022-06-14 05:53:25,373] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 05:53:26,792] - [django.server:log_message:187] "GET /admin/users/user/ HTTP/1.1" 200 7808
+INFO [2022-06-14 05:53:26,817] - [django.server:log_message:187] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO [2022-06-14 05:53:26,853] - [django.server:log_message:187] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+ERROR [2022-06-14 05:53:29,195] - [django.request:log_response:241] Internal Server Error: /admin/users/user/2/change/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 804, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 648, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 327, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (is_stuff, show_avatar) specified for User
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1888, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1781, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/admin.py", line 98, in get_form
+    return super().get_form(request, obj, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 806, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (is_stuff, show_avatar) specified for User. Check fields/fieldsets/exclude attributes of class UserAdmin.
+ERROR [2022-06-14 05:53:29,197] - [django.server:log_message:187] "GET /admin/users/user/2/change/ HTTP/1.1" 500 140235
+INFO [2022-06-14 05:54:08,654] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/admin.py changed, reloading.
+INFO [2022-06-14 05:54:09,115] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-14 05:54:14,221] - [django.request:log_response:241] Internal Server Error: /admin/users/user/2/change/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 804, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 648, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 327, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1888, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1781, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/admin.py", line 98, in get_form
+    return super().get_form(request, obj, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 806, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User. Check fields/fieldsets/exclude attributes of class UserAdmin.
+ERROR [2022-06-14 05:54:14,223] - [django.server:log_message:187] "GET /admin/users/user/2/change/ HTTP/1.1" 500 140319
+INFO [2022-06-14 05:56:10,845] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/admin.py changed, reloading.
+INFO [2022-06-14 05:56:11,463] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-14 05:56:13,570] - [django.request:log_response:241] Internal Server Error: /admin/users/user/2/change/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 804, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 648, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 327, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1888, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1781, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/admin.py", line 98, in get_form
+    return super().get_form(request, obj, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 806, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User. Check fields/fieldsets/exclude attributes of class UserAdmin.
+ERROR [2022-06-14 05:56:13,572] - [django.server:log_message:187] "GET /admin/users/user/2/change/ HTTP/1.1" 500 140319
+ERROR [2022-06-14 05:56:14,234] - [django.request:log_response:241] Internal Server Error: /admin/users/user/2/change/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 804, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 648, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 327, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1888, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1781, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/admin.py", line 98, in get_form
+    return super().get_form(request, obj, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 806, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User. Check fields/fieldsets/exclude attributes of class UserAdmin.
+ERROR [2022-06-14 05:56:14,235] - [django.server:log_message:187] "GET /admin/users/user/2/change/ HTTP/1.1" 500 140319
+ERROR [2022-06-14 05:56:14,824] - [django.request:log_response:241] Internal Server Error: /admin/users/user/2/change/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 804, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 648, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 327, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1888, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1781, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/admin.py", line 98, in get_form
+    return super().get_form(request, obj, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 806, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User. Check fields/fieldsets/exclude attributes of class UserAdmin.
+ERROR [2022-06-14 05:56:14,824] - [django.server:log_message:187] "GET /admin/users/user/2/change/ HTTP/1.1" 500 140319
+ERROR [2022-06-14 05:56:15,109] - [django.request:log_response:241] Internal Server Error: /admin/users/user/2/change/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 804, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 648, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 327, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1888, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1781, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/admin.py", line 98, in get_form
+    return super().get_form(request, obj, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 806, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User. Check fields/fieldsets/exclude attributes of class UserAdmin.
+ERROR [2022-06-14 05:56:15,111] - [django.server:log_message:187] "GET /admin/users/user/2/change/ HTTP/1.1" 500 140319
+ERROR [2022-06-14 05:56:15,356] - [django.request:log_response:241] Internal Server Error: /admin/users/user/2/change/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 804, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 648, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 327, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1888, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1781, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/admin.py", line 98, in get_form
+    return super().get_form(request, obj, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 806, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User. Check fields/fieldsets/exclude attributes of class UserAdmin.
+ERROR [2022-06-14 05:56:15,357] - [django.server:log_message:187] "GET /admin/users/user/2/change/ HTTP/1.1" 500 140319
+ERROR [2022-06-14 05:56:15,561] - [django.request:log_response:241] Internal Server Error: /admin/users/user/2/change/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 804, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 648, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 327, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1888, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1781, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/admin.py", line 98, in get_form
+    return super().get_form(request, obj, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 806, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User. Check fields/fieldsets/exclude attributes of class UserAdmin.
+ERROR [2022-06-14 05:56:15,562] - [django.server:log_message:187] "GET /admin/users/user/2/change/ HTTP/1.1" 500 140319
+INFO [2022-06-14 05:56:53,975] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/admin.py changed, reloading.
+INFO [2022-06-14 05:56:54,467] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 05:56:56,431] - [django.server:log_message:187] "GET /admin/users/user/ HTTP/1.1" 200 7976
+INFO [2022-06-14 05:56:58,036] - [django.server:log_message:187] "GET /admin/users/user/ HTTP/1.1" 200 7976
+INFO [2022-06-14 05:56:58,061] - [django.server:log_message:187] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO [2022-06-14 05:57:02,645] - [django.server:log_message:187] "GET /admin/users/user/2/change/ HTTP/1.1" 200 10451
+INFO [2022-06-14 05:57:02,671] - [django.server:log_message:187] "GET /static/admin/css/forms.css HTTP/1.1" 200 8878
+INFO [2022-06-14 05:57:02,673] - [django.server:log_message:187] "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+INFO [2022-06-14 05:57:02,680] - [django.server:log_message:187] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+INFO [2022-06-14 05:57:02,681] - [django.server:log_message:187] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+INFO [2022-06-14 05:57:02,697] - [django.server:log_message:187] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO [2022-06-14 05:57:02,701] - [django.server:log_message:187] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO [2022-06-14 05:57:02,729] - [django.server:log_message:187] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+INFO [2022-06-14 05:57:02,830] - [django.server:log_message:187] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO [2022-06-14 05:57:56,364] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/admin.py changed, reloading.
+INFO [2022-06-14 05:57:56,939] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-14 05:57:58,174] - [django.request:log_response:241] Internal Server Error: /admin/users/user/2/change/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 804, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 648, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 327, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1888, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1781, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/admin.py", line 98, in get_form
+    return super().get_form(request, obj, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 806, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User. Check fields/fieldsets/exclude attributes of class UserAdmin.
+ERROR [2022-06-14 05:57:58,175] - [django.server:log_message:187] "GET /admin/users/user/2/change/ HTTP/1.1" 500 140248
+INFO [2022-06-14 05:58:52,442] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/admin.py changed, reloading.
+INFO [2022-06-14 05:58:52,923] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 05:59:06,313] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/admin.py changed, reloading.
+INFO [2022-06-14 05:59:06,954] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-14 05:59:08,826] - [django.request:log_response:241] Internal Server Error: /admin/users/user/2/change/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 804, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 648, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/forms/models.py", line 327, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1888, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1781, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/admin.py", line 98, in get_form
+    return super().get_form(request, obj, **defaults)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 806, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (show_avatar) specified for User. Check fields/fieldsets/exclude attributes of class UserAdmin.
+ERROR [2022-06-14 05:59:08,827] - [django.server:log_message:187] "GET /admin/users/user/2/change/ HTTP/1.1" 500 140248
+INFO [2022-06-14 05:59:38,172] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/admin.py changed, reloading.
+INFO [2022-06-14 05:59:38,636] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 05:59:40,034] - [django.server:log_message:187] "GET /admin/users/user/2/change/ HTTP/1.1" 200 10970
+INFO [2022-06-14 05:59:40,061] - [django.server:log_message:187] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO [2022-06-14 06:00:10,865] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/admin.py changed, reloading.
+INFO [2022-06-14 06:00:11,407] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
