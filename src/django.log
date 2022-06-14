@@ -2030,3 +2030,129 @@ INFO [2022-06-14 11:51:01,122] - [django.utils.autoreload:trigger_reload:266] /h
 INFO [2022-06-14 11:51:01,954] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
 INFO [2022-06-14 11:54:12,048] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
 INFO [2022-06-14 11:54:12,758] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 12:38:27,867] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-14 12:38:33,016] - [django.request:log_response:241] Not Found: /
+WARNING [2022-06-14 12:38:33,018] - [django.server:log_message:187] "GET / HTTP/1.1" 404 4382
+WARNING [2022-06-14 12:38:33,409] - [django.request:log_response:241] Not Found: /favicon.ico
+WARNING [2022-06-14 12:38:33,410] - [django.server:log_message:187] "GET /favicon.ico HTTP/1.1" 404 4433
+INFO [2022-06-14 12:38:40,538] - [django.server:log_message:187] "GET /password-reset/ HTTP/1.1" 200 1467
+INFO [2022-06-14 12:38:43,257] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1021
+INFO [2022-06-14 12:40:03,373] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 12:40:04,158] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 12:40:15,815] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1640
+INFO [2022-06-14 12:40:35,098] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 1640
+INFO [2022-06-14 12:41:29,949] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 12:41:30,774] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 12:41:41,934] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 1640
+INFO [2022-06-14 12:43:41,013] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1021
+WARNING [2022-06-14 12:44:38,714] - [django.security.csrf:log_response:241] Forbidden (CSRF token missing.): /profile/
+WARNING [2022-06-14 12:44:38,716] - [django.server:log_message:187] "POST /profile/ HTTP/1.1" 403 2506
+WARNING [2022-06-14 12:45:13,355] - [django.security.csrf:log_response:241] Forbidden (CSRF token missing.): /profile/
+WARNING [2022-06-14 12:45:13,356] - [django.server:log_message:187] "POST /profile/ HTTP/1.1" 403 2506
+INFO [2022-06-14 12:45:19,956] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1147
+ERROR [2022-06-14 12:45:49,537] - [django.request:log_response:241] Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 80, in post
+    form = self.form_class(request.POST, request.FILE, instance=request.user)
+AttributeError: 'WSGIRequest' object has no attribute 'FILE'
+ERROR [2022-06-14 12:45:49,538] - [django.server:log_message:187] "POST /profile/ HTTP/1.1" 500 82368
+INFO [2022-06-14 12:46:25,627] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 12:46:26,308] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 12:46:30,105] - [django.server:log_message:187] "POST /profile/ HTTP/1.1" 302 0
+INFO [2022-06-14 12:46:30,127] - [django.server:log_message:187] "GET /swagger/ HTTP/1.1" 200 2232
+INFO [2022-06-14 12:46:30,149] - [django.server:log_message:187] "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:30,154] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:30,162] - [django.server:log_message:187] "GET /static/drf-yasg/url-polyfill.min.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:30,175] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:30,176] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:30,176] - [django.server:log_message:187] "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:30,177] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:30,178] - [django.server:log_message:187] "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:30,662] - [django.server:log_message:187] "GET /swagger/?format=openapi HTTP/1.1" 200 2302
+INFO [2022-06-14 12:46:35,852] - [django.server:log_message:187] "GET /admin/ HTTP/1.1" 200 3872
+INFO [2022-06-14 12:46:35,898] - [django.server:log_message:187] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:35,899] - [django.server:log_message:187] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:35,901] - [django.server:log_message:187] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:35,901] - [django.server:log_message:187] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:35,902] - [django.server:log_message:187] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:37,718] - [django.server:log_message:187] "GET /admin/ HTTP/1.1" 200 3552
+INFO [2022-06-14 12:46:37,788] - [django.server:log_message:187] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:37,805] - [django.server:log_message:187] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:37,805] - [django.server:log_message:187] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:37,854] - [django.server:log_message:187] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:37,855] - [django.server:log_message:187] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:37,856] - [django.server:log_message:187] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:39,849] - [django.server:log_message:187] "GET /admin/users/user/ HTTP/1.1" 200 8036
+INFO [2022-06-14 12:46:39,872] - [django.server:log_message:187] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:39,894] - [django.server:log_message:187] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:39,895] - [django.server:log_message:187] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:39,895] - [django.server:log_message:187] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:39,895] - [django.server:log_message:187] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:39,897] - [django.server:log_message:187] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:39,914] - [django.server:log_message:187] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:39,916] - [django.server:log_message:187] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:39,920] - [django.server:log_message:187] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:39,920] - [django.server:log_message:187] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO [2022-06-14 12:46:39,940] - [django.server:log_message:187] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:39,947] - [django.server:log_message:187] "GET /media/avatars/les_derevya_tuman_110131_1920x1080.jpg HTTP/1.1" 200 143092
+INFO [2022-06-14 12:46:40,003] - [django.server:log_message:187] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:40,026] - [django.server:log_message:187] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:42,397] - [django.server:log_message:187] "GET /admin/users/user/2/change/ HTTP/1.1" 200 11152
+INFO [2022-06-14 12:46:42,421] - [django.server:log_message:187] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:42,423] - [django.server:log_message:187] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:42,427] - [django.server:log_message:187] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:42,428] - [django.server:log_message:187] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:42,439] - [django.server:log_message:187] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO [2022-06-14 12:46:42,449] - [django.server:log_message:187] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:42,450] - [django.server:log_message:187] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:42,544] - [django.server:log_message:187] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO [2022-06-14 12:46:51,732] - [django.server:log_message:187] "GET /admin/users/user/ HTTP/1.1" 200 8036
+INFO [2022-06-14 12:47:00,145] - [django.server:log_message:187] "GET /logout/ HTTP/1.1" 200 1376
+INFO [2022-06-14 12:47:04,812] - [django.server:log_message:187] "GET /sign_up/ HTTP/1.1" 200 2125
+INFO [2022-06-14 12:47:07,259] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1640
+INFO [2022-06-14 12:47:33,516] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 1640
+INFO [2022-06-14 12:48:52,512] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 12:48:53,162] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 12:49:44,963] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 1640
+INFO [2022-06-14 12:49:49,317] - [django.server:log_message:187] "GET /swagger/ HTTP/1.1" 200 2232
+INFO [2022-06-14 12:49:49,646] - [django.server:log_message:187] "GET /swagger/?format=openapi HTTP/1.1" 200 2302
+INFO [2022-06-14 12:49:52,530] - [django.server:log_message:187] "GET /admin/ HTTP/1.1" 302 0
+INFO [2022-06-14 12:49:52,553] - [django.server:log_message:187] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2454
+INFO [2022-06-14 12:49:52,580] - [django.server:log_message:187] "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO [2022-06-14 12:49:52,621] - [django.server:log_message:187] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO [2022-06-14 12:49:58,461] - [django.server:log_message:187] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2375
+INFO [2022-06-14 12:50:04,840] - [django.server:log_message:187] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2375
+INFO [2022-06-14 12:51:10,943] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 12:51:58,222] - [django.server:log_message:187] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO [2022-06-14 12:51:58,290] - [django.server:log_message:187] "GET /admin/ HTTP/1.1" 200 3554
+INFO [2022-06-14 12:52:02,171] - [django.server:log_message:187] "GET /admin/users/user/ HTTP/1.1" 200 8446
+INFO [2022-06-14 12:52:02,212] - [django.server:log_message:187] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO [2022-06-14 12:52:02,230] - [django.server:log_message:187] "GET /media/avatars/les_derevya_tuman_110131_1920x1080.jpg HTTP/1.1" 304 0
+WARNING [2022-06-14 12:52:26,896] - [django.security.csrf:log_response:241] Forbidden (CSRF token from POST incorrect.): /login/
+WARNING [2022-06-14 12:52:26,897] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 403 2518
+WARNING [2022-06-14 12:52:31,063] - [django.security.csrf:log_response:241] Forbidden (CSRF token from POST incorrect.): /login/
+WARNING [2022-06-14 12:52:31,064] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 403 2518
+INFO [2022-06-14 12:52:52,188] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1640
+INFO [2022-06-14 12:53:14,637] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 302 0
+INFO [2022-06-14 12:53:14,645] - [django.server:log_message:187] "GET /swagger/ HTTP/1.1" 200 2232
+INFO [2022-06-14 12:53:14,797] - [django.server:log_message:187] "GET /swagger/?format=openapi HTTP/1.1" 200 2302
+INFO [2022-06-14 12:55:28,142] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 12:55:28,732] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 12:56:11,708] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 12:56:12,296] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 12:56:20,782] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 12:56:21,447] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 12:56:34,193] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 12:56:34,752] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 12:57:53,796] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-14 12:57:54,389] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader

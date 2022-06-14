@@ -1,8 +1,12 @@
 from django.views.generic import View
+from django.urls import reverse_lazy
 from django.shortcuts import render, redirect
 from users.forms import LoginUserForm, RegisterForm, UpdateUserForm
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.views import PasswordChangeView
+from django.contrib.messages.views import SuccessMessageMixin
 
 
 class RegisterPageView(View):
@@ -56,6 +60,7 @@ class LoginPageView(View):
                 messages.error(request, "Invalid username or password.")
         else:
             messages.error(request,"Invalid form(Invalid username or password)")
+            print('Invalid')
 
         context={
             'form': self.form_class
@@ -64,17 +69,18 @@ class LoginPageView(View):
         return render(request, self.template_name, context=context)
 
 
-class UpdateUserView(View):
+class UpdateUserView(LoginRequiredMixin, View):
     form_class = UpdateUserForm
+    template_name = 'profile/profile.html'
 
     def get(self, request):
         context = {
             'form': self.form_class,
         }
-        return render(request, 'profile/profile_update.html', context)
+        return render(request, self.template_name, context)
 
     def post(self, request):
-        form = self.form_class(request.POST, request.FILE, instance=request.user)
+        form = self.form_class(request.POST, request.FILES, instance=request.user)
 
         if form.is_valid():
             form.save()
@@ -87,5 +93,10 @@ class UpdateUserView(View):
             'form': self.form_class,
         }
 
-        return render(request, 'profile/profile_update.html', context)
+        return render(request, self.template_name, context)
 
+
+class ChangePasswordView(SuccessMessageMixin, PasswordChangeView):
+    template_name = 'profile/change_password.html'
+    success_message = "Successfully Changed Your Password"
+    success_url = reverse_lazy('profile')
