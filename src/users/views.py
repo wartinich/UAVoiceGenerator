@@ -8,12 +8,6 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
 
 
-# class SignUpPageView(CreateView):
-#     form_class = RegisterForm
-#     success_url = reverse_lazy('login')
-#     template_name = 'auth/sign_up.html'
-
-
 class RegisterPageView(View):
     form_class = RegisterForm
     template_name = 'auth/sign_up.html'

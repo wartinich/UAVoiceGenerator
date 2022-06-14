@@ -18,6 +18,6 @@ class RegisterForm(UserCreationForm):
 
 class LoginUserForm(AuthenticationForm):
     """Login Form"""
-    username = forms.CharField(required=True)
-    email = forms.EmailField(required=True, widget=forms.EmailInput())
-    password = forms.CharField(required=True, widget=forms.PasswordInput())
+    email = forms.EmailField(required=True, widget=forms.EmailInput(attrs={'placeholder': 'Email'}))
+    username = forms.CharField(required=True, widget=forms.EmailInput(attrs={'placeholder': 'Username'}))
+    password = forms.CharField(required=True, widget=forms.PasswordInput(attrs={'placeholder': 'Password'}))

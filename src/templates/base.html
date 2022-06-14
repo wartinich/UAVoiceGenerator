@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %}</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    {% block visual %}{% endblock %}
 </head>
-<body>
+<body class="m-0 p-0 h-screen">
     {% block content %}{% endblock %}
 </body>
 </html>

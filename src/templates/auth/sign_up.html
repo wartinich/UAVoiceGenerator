@@ -2,12 +2,33 @@
 
 {% block title %}Sign Up{% endblock %}
 
+{% block visual %}
+<style type="text/tailwindcss">
+    .login_form{
+        @apply bg-gray-200 text-center m-auto p-3 rounded-sm w-72 h-60 block absolute right-0 bottom-0 top-0 left-0
+    }
+
+    input{
+        @apply block text-center rounded p-1 m-2 ml-0 w-full focus:outline-none outline-none
+    }
+
+    .linkers{
+        @apply flex justify-between p-2
+    }
+
+    .btn{
+        @apply bg-yellow-400 rounded p-0.5 w-1/2 hover:bg-yellow-500
+    }
+
+</style>
+{% endblock %}
+
 {% block content %}
-    <p>{{ message }}</p>
-    <form method="post">
+    <form method="POST">
         <h1>Sign Up</h1>
-        {{ form.as_p }}
         {% csrf_token %}
+        {{ form.email }}
+        {{ form.username }}
         <button type="submit" >Sign Up</button>
     </form>
 {% endblock %}

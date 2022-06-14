@@ -1722,3 +1722,115 @@ INFO [2022-06-14 06:33:58,282] - [django.utils.autoreload:run_with_reloader:677]
 INFO [2022-06-14 06:34:15,786] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
 INFO [2022-06-14 06:34:16,268] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
 INFO [2022-06-14 06:34:18,585] - [django.server:log_message:187] "GET /sign_up/ HTTP/1.1" 200 1943
+INFO [2022-06-14 06:36:21,355] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:36:45,188] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-14 06:36:45,704] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 06:38:52,663] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 829
+INFO [2022-06-14 06:43:23,419] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 912
+INFO [2022-06-14 06:44:25,159] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 902
+INFO [2022-06-14 06:44:31,084] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 902
+INFO [2022-06-14 06:45:19,648] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 918
+INFO [2022-06-14 06:45:34,752] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 918
+INFO [2022-06-14 06:45:41,451] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 918
+INFO [2022-06-14 06:45:49,733] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 918
+INFO [2022-06-14 06:46:04,905] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 930
+INFO [2022-06-14 06:48:22,318] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 966
+INFO [2022-06-14 06:50:22,108] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 994
+INFO [2022-06-14 06:50:22,709] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 994
+INFO [2022-06-14 06:50:22,877] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 994
+INFO [2022-06-14 06:51:05,994] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 992
+INFO [2022-06-14 06:51:06,429] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 992
+INFO [2022-06-14 06:54:36,252] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1026
+INFO [2022-06-14 06:56:06,478] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1026
+INFO [2022-06-14 06:56:06,893] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1026
+INFO [2022-06-14 06:56:29,774] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1038
+INFO [2022-06-14 06:57:19,689] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1054
+INFO [2022-06-14 06:58:05,581] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1061
+INFO [2022-06-14 06:58:18,700] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1058
+INFO [2022-06-14 07:00:41,211] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1108
+INFO [2022-06-14 07:01:52,736] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1159
+INFO [2022-06-14 07:02:33,074] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1163
+INFO [2022-06-14 07:02:39,072] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1163
+INFO [2022-06-14 07:03:09,031] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1169
+INFO [2022-06-14 07:03:33,260] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1170
+INFO [2022-06-14 07:03:47,861] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1171
+INFO [2022-06-14 07:04:53,049] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1178
+INFO [2022-06-14 07:05:17,946] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1169
+INFO [2022-06-14 07:05:31,504] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1172
+INFO [2022-06-14 07:06:03,642] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1180
+INFO [2022-06-14 07:06:12,100] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1177
+INFO [2022-06-14 07:06:18,537] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1170
+INFO [2022-06-14 07:09:07,150] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-14 07:09:07,724] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 07:10:16,500] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-14 07:10:17,125] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 07:10:17,807] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1234
+INFO [2022-06-14 07:12:06,441] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1201
+INFO [2022-06-14 07:13:14,635] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1204
+INFO [2022-06-14 07:13:32,556] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1200
+INFO [2022-06-14 07:16:48,135] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1209
+INFO [2022-06-14 07:23:48,560] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1232
+INFO [2022-06-14 07:24:02,324] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1239
+INFO [2022-06-14 07:24:17,164] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1235
+INFO [2022-06-14 07:24:38,721] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1240
+INFO [2022-06-14 07:24:52,065] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1245
+INFO [2022-06-14 07:27:29,487] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1411
+INFO [2022-06-14 07:29:22,864] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1475
+INFO [2022-06-14 07:29:33,032] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1481
+INFO [2022-06-14 07:29:43,854] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1472
+INFO [2022-06-14 07:29:45,022] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1472
+INFO [2022-06-14 07:30:17,650] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1473
+INFO [2022-06-14 07:31:05,527] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1447
+INFO [2022-06-14 07:31:06,386] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1447
+INFO [2022-06-14 07:32:38,630] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1498
+INFO [2022-06-14 07:32:39,359] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1498
+INFO [2022-06-14 07:32:39,549] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1498
+INFO [2022-06-14 07:32:56,516] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1500
+INFO [2022-06-14 07:32:57,126] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1500
+INFO [2022-06-14 07:32:57,292] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1500
+INFO [2022-06-14 07:32:57,461] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1500
+INFO [2022-06-14 07:32:57,650] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1500
+INFO [2022-06-14 07:33:07,899] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1465
+INFO [2022-06-14 07:33:33,921] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1506
+INFO [2022-06-14 07:33:35,328] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1506
+INFO [2022-06-14 07:34:16,522] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1495
+INFO [2022-06-14 07:35:18,237] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1474
+INFO [2022-06-14 07:35:51,219] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1470
+INFO [2022-06-14 07:36:11,819] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1470
+INFO [2022-06-14 07:36:50,851] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1475
+INFO [2022-06-14 07:36:51,808] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1475
+INFO [2022-06-14 07:37:08,548] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1475
+INFO [2022-06-14 07:37:16,793] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1474
+INFO [2022-06-14 07:37:28,806] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1474
+INFO [2022-06-14 07:43:36,523] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1478
+INFO [2022-06-14 07:44:02,634] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1486
+INFO [2022-06-14 07:44:24,756] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1486
+INFO [2022-06-14 07:45:13,697] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1497
+INFO [2022-06-14 07:46:05,626] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1505
+INFO [2022-06-14 07:46:34,625] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1518
+INFO [2022-06-14 07:47:02,519] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-14 07:47:03,178] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 07:47:04,644] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1521
+INFO [2022-06-14 07:48:31,593] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1577
+INFO [2022-06-14 07:48:47,638] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1575
+INFO [2022-06-14 07:48:56,197] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1575
+INFO [2022-06-14 07:49:03,599] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1575
+INFO [2022-06-14 07:49:12,714] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1579
+INFO [2022-06-14 07:49:22,500] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1579
+INFO [2022-06-14 07:49:51,214] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1585
+INFO [2022-06-14 07:50:00,778] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1585
+INFO [2022-06-14 07:50:34,021] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1587
+INFO [2022-06-14 07:50:44,788] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1595
+INFO [2022-06-14 07:51:24,415] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1596
+INFO [2022-06-14 07:51:35,384] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1596
+INFO [2022-06-14 07:52:06,120] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1616
+INFO [2022-06-14 07:52:14,853] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1618
+INFO [2022-06-14 07:52:20,292] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1616
+INFO [2022-06-14 07:52:32,188] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1616
+INFO [2022-06-14 07:53:11,530] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1604
+INFO [2022-06-14 07:53:33,994] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1617
+INFO [2022-06-14 07:53:57,263] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1616
+INFO [2022-06-14 07:54:15,097] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1616
+INFO [2022-06-14 07:54:20,989] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1616
+INFO [2022-06-14 07:57:14,513] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1641
+INFO [2022-06-14 07:57:15,981] - [django.server:log_message:187] "GET /sign_up/ HTTP/1.1" 200 1973
