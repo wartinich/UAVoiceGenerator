@@ -2156,3 +2156,49 @@ INFO [2022-06-14 12:56:34,193] - [django.utils.autoreload:trigger_reload:266] /h
 INFO [2022-06-14 12:56:34,752] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
 INFO [2022-06-14 12:57:53,796] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
 INFO [2022-06-14 12:57:54,389] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-14 13:03:17,478] - [django.request:log_response:241] Not Found: /
+WARNING [2022-06-14 13:03:17,479] - [django.server:log_message:187] "GET / HTTP/1.1" 404 4569
+INFO [2022-06-14 13:03:22,862] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1335
+INFO [2022-06-14 13:04:06,873] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1275
+INFO [2022-06-14 13:04:08,625] - [django.server:log_message:187] "GET /password-change/ HTTP/1.1" 200 821
+INFO [2022-06-14 13:04:39,803] - [django.server:log_message:187] "POST /password-change/ HTTP/1.1" 200 821
+INFO [2022-06-14 13:04:48,287] - [django.server:log_message:187] "GET /logout/ HTTP/1.1" 200 1376
+INFO [2022-06-14 13:04:57,730] - [django.server:log_message:187] "GET /sign_up/ HTTP/1.1" 200 2125
+INFO [2022-06-14 13:04:59,109] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1640
+INFO [2022-06-14 13:05:17,292] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 200 1640
+INFO [2022-06-14 13:05:27,803] - [django.server:log_message:187] "GET /admin/ HTTP/1.1" 302 0
+INFO [2022-06-14 13:05:27,845] - [django.server:log_message:187] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2442
+INFO [2022-06-14 13:05:27,938] - [django.server:log_message:187] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO [2022-06-14 13:05:35,379] - [django.server:log_message:187] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2376
+INFO [2022-06-14 13:05:46,904] - [django.server:log_message:187] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO [2022-06-14 13:05:46,940] - [django.server:log_message:187] "GET /admin/ HTTP/1.1" 200 3554
+INFO [2022-06-14 13:05:49,773] - [django.server:log_message:187] "GET /admin/users/user/ HTTP/1.1" 200 8446
+INFO [2022-06-14 13:05:49,821] - [django.server:log_message:187] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO [2022-06-14 13:05:49,830] - [django.server:log_message:187] "GET /media/avatars/les_derevya_tuman_110131_1920x1080.jpg HTTP/1.1" 304 0
+INFO [2022-06-14 13:05:51,602] - [django.server:log_message:187] "GET /admin/users/user/3/change/ HTTP/1.1" 200 10970
+INFO [2022-06-14 13:05:51,648] - [django.server:log_message:187] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+WARNING [2022-06-14 13:06:15,179] - [django.security.csrf:log_response:241] Forbidden (CSRF token from POST incorrect.): /login/
+WARNING [2022-06-14 13:06:15,180] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 403 2518
+WARNING [2022-06-14 13:06:18,116] - [django.security.csrf:log_response:241] Forbidden (CSRF token from POST incorrect.): /login/
+WARNING [2022-06-14 13:06:18,117] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 403 2518
+INFO [2022-06-14 13:06:20,454] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1640
+INFO [2022-06-14 13:06:23,152] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 302 0
+INFO [2022-06-14 13:06:23,162] - [django.server:log_message:187] "GET /swagger/ HTTP/1.1" 200 2232
+INFO [2022-06-14 13:06:23,368] - [django.server:log_message:187] "GET /swagger/?format=openapi HTTP/1.1" 200 2302
+INFO [2022-06-14 13:12:00,215] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-14 13:12:01,885] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 13:12:54,536] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-14 13:12:55,062] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 13:13:01,357] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/urls.py changed, reloading.
+INFO [2022-06-14 13:13:01,834] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-14 13:13:11,476] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1640
+INFO [2022-06-14 13:13:23,625] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 302 0
+INFO [2022-06-14 13:13:23,632] - [django.server:log_message:187] "GET /swagger/ HTTP/1.1" 200 2232
+INFO [2022-06-14 13:13:23,768] - [django.server:log_message:187] "GET /swagger/?format=openapi HTTP/1.1" 200 2302
+INFO [2022-06-14 13:13:28,914] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1275
+INFO [2022-06-14 13:13:30,626] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 1553
+INFO [2022-06-14 13:14:34,910] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 771
+INFO [2022-06-14 13:15:36,922] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 771
+INFO [2022-06-14 13:15:37,564] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 771
+INFO [2022-06-14 13:19:08,613] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 1553
+INFO [2022-06-14 13:20:11,245] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 982

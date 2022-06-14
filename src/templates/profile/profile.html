@@ -13,6 +13,9 @@
     {{ form.birth_date }}
     {{ form.avatar_image }}
     <button>Save Changes</button>
+    <div class="linkers">
+            <a class="forgot_password" href="{% url 'change_password' %}">Change password</a>
+    </div>
 </form>
 
 {% endblock %}

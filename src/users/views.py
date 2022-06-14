@@ -5,8 +5,6 @@ from users.forms import LoginUserForm, RegisterForm, UpdateUserForm
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.views import PasswordChangeView
-from django.contrib.messages.views import SuccessMessageMixin
 
 
 class RegisterPageView(View):
@@ -94,9 +92,3 @@ class UpdateUserView(LoginRequiredMixin, View):
         }
 
         return render(request, self.template_name, context)
-
-
-class ChangePasswordView(SuccessMessageMixin, PasswordChangeView):
-    template_name = 'profile/change_password.html'
-    success_message = "Successfully Changed Your Password"
-    success_url = reverse_lazy('profile')
