@@ -1,10 +1,7 @@
-from django.views.generic import CreateView, View
-from django.urls import reverse_lazy
+from django.views.generic import View
 from django.shortcuts import render, redirect
-from users.forms import LoginUserForm, RegisterForm
-from django.http import HttpResponse
+from users.forms import LoginUserForm, RegisterForm, UpdateUserForm
 from django.contrib.auth import authenticate, login
-from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
 
 
@@ -65,4 +62,30 @@ class LoginPageView(View):
         }
 
         return render(request, self.template_name, context=context)
+
+
+class UpdateUserView(View):
+    form_class = UpdateUserForm
+
+    def get(self, request):
+        context = {
+            'form': self.form_class,
+        }
+        return render(request, 'profile/profile_update.html', context)
+
+    def post(self, request):
+        form = self.form_class(request.POST, request.FILE, instance=request.user)
+
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Profile updated successfully')
+            return redirect('schema-swagger-ui')
+        else:
+            messages.error(request, "Invalid form(Invalid username or password)")
+
+        context = {
+            'form': self.form_class,
+        }
+
+        return render(request, 'profile/profile_update.html', context)
 
