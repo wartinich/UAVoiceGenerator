@@ -2245,3 +2245,98 @@ INFO [2022-06-15 06:41:48,095] - [django.utils.autoreload:trigger_reload:266] /h
 INFO [2022-06-15 06:41:48,620] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
 INFO [2022-06-15 06:41:49,341] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 2035
 INFO [2022-06-15 06:41:57,469] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 2035
+INFO [2022-06-15 06:46:26,774] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-15 06:46:54,096] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 2035
+INFO [2022-06-15 06:48:58,091] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-15 06:48:58,677] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-15 06:53:39,088] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-15 06:53:39,723] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-15 08:27:21,603] - [django.request:log_response:241] Internal Server Error: /sign_up/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 21, in post
+    form = self.form_class(request, data=request.POST)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 112, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: BaseModelForm.__init__() got multiple values for argument 'data'
+INFO [2022-06-15 08:33:10,452] - [django.server:log_message:187] "GET /admin/ HTTP/1.1" 200 3769
+INFO [2022-06-15 08:33:10,475] - [django.server:log_message:187] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:10,487] - [django.server:log_message:187] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:10,488] - [django.server:log_message:187] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:10,499] - [django.server:log_message:187] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:10,499] - [django.server:log_message:187] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:10,500] - [django.server:log_message:187] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:10,515] - [django.server:log_message:187] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:10,516] - [django.server:log_message:187] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:10,517] - [django.server:log_message:187] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:10,550] - [django.server:log_message:187] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:10,550] - [django.server:log_message:187] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:10,551] - [django.server:log_message:187] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:15,919] - [django.server:log_message:187] "GET /admin/users/user/ HTTP/1.1" 200 8446
+INFO [2022-06-15 08:33:15,943] - [django.server:log_message:187] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:15,958] - [django.server:log_message:187] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:15,960] - [django.server:log_message:187] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:15,968] - [django.server:log_message:187] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:15,969] - [django.server:log_message:187] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:15,969] - [django.server:log_message:187] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:15,974] - [django.server:log_message:187] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:15,976] - [django.server:log_message:187] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:15,980] - [django.server:log_message:187] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:15,983] - [django.server:log_message:187] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO [2022-06-15 08:33:15,995] - [django.server:log_message:187] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:16,032] - [django.server:log_message:187] "GET /media/avatars/les_derevya_tuman_110131_1920x1080.jpg HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:16,045] - [django.server:log_message:187] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO [2022-06-15 08:33:16,055] - [django.server:log_message:187] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+ERROR [2022-06-15 08:53:25,343] - [django.request:log_response:241] Internal Server Error: /sign_up/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 21, in post
+    form = self.form_class(request, data=request.POST)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 112, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: BaseModelForm.__init__() got multiple values for argument 'data'
+WARNING [2022-06-15 09:14:57,569] - [django.request:log_response:241] Not Found: /signup/
+ERROR [2022-06-15 09:15:41,165] - [django.request:log_response:241] Internal Server Error: /sign_up/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 21, in post
+    form = self.form_class(request, data=request.POST)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 112, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: BaseModelForm.__init__() got multiple values for argument 'data'
+ERROR [2022-06-15 09:18:45,205] - [django.request:log_response:241] Internal Server Error: /sign_up/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 21, in post
+    form = self.form_class(request, data=request.POST)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/forms.py", line 112, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: BaseModelForm.__init__() got multiple values for argument 'data'
