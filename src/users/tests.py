@@ -37,3 +37,13 @@ class LogInTest(TestCase):
     def test_login_form(self):
         response = self.client.post('/login/', self.credentials, follow=True)
         self.assertEqual(response.status_code, 200)
+
+
+class LogOutTest(TestCase):
+    def test_logout_url(self):
+        response = self.client.get('/logout/')
+        self.assertEqual(response.status_code, 200)
+
+    def test_logout_form(self):
+        response = self.client.post('/logout/')
+        self.assertEqual(response.status_code, 200)
