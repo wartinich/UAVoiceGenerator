@@ -12,9 +12,13 @@ class RegisterPageView(View):
     template_name = 'auth/sign_up.html'
 
     def get(self, request):
+        if self.request.user.is_authenticated:
+            return redirect('profile')
+
         context = {
             'form': self.form_class
         }
+
         return render(request, self.template_name, context)
 
     def post(self, request):
@@ -60,9 +64,13 @@ class LoginPageView(View):
     template_name = 'auth/login.html'
 
     def get(self, request):
+        if self.request.user.is_authenticated:
+            return redirect('profile')
+
         context = {
             'form': self.form_class,
         }
+
         return render(request, self.template_name, context)
 
     def post(self, request):

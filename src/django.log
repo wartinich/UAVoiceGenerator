@@ -2615,3 +2615,37 @@ INFO [2022-06-15 12:24:16,904] - [django.utils.autoreload:trigger_reload:266] /h
 INFO [2022-06-15 12:24:17,607] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
 INFO [2022-06-15 12:24:20,073] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
 INFO [2022-06-15 12:24:20,684] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-15 12:25:37,146] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-15 12:26:19,588] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-15 12:26:20,133] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-15 12:26:31,625] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-15 12:26:32,134] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-15 12:27:46,705] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-15 12:27:47,214] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-15 12:27:48,558] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-15 12:27:49,273] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-15 12:27:52,072] - [django.request:log_response:241] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/users/views.py", line 63, in get
+    if self.request.user.is_authenticated():
+TypeError: 'bool' object is not callable
+ERROR [2022-06-15 12:27:52,072] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 500 75577
+INFO [2022-06-15 12:28:33,654] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-15 12:28:34,248] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-15 12:28:36,762] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 200 1564
+INFO [2022-06-15 12:28:39,827] - [django.server:log_message:187] "POST /login/ HTTP/1.1" 302 0
+INFO [2022-06-15 12:28:39,848] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1981
+INFO [2022-06-15 12:28:43,899] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 302 0
+INFO [2022-06-15 12:28:46,037] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1981
+INFO [2022-06-15 12:29:15,499] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-15 12:29:16,088] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-15 12:29:28,827] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
+INFO [2022-06-15 12:29:29,290] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
