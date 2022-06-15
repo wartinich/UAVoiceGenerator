@@ -2216,3 +2216,32 @@ INFO [2022-06-14 13:36:17,066] - [django.server:log_message:187] "GET /change-pa
 INFO [2022-06-14 13:36:55,855] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 1509
 INFO [2022-06-14 13:37:12,082] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 1509
 INFO [2022-06-14 13:37:34,671] - [django.server:log_message:187] "GET /change-password/ HTTP/1.1" 200 1509
+INFO [2022-06-15 06:30:08,542] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1753
+INFO [2022-06-15 06:31:13,199] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1774
+INFO [2022-06-15 06:31:25,369] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1774
+INFO [2022-06-15 06:32:31,689] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1774
+INFO [2022-06-15 06:32:39,644] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1774
+INFO [2022-06-15 06:33:25,722] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1852
+INFO [2022-06-15 06:33:43,150] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1850
+INFO [2022-06-15 06:34:02,575] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1850
+INFO [2022-06-15 06:34:33,236] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1849
+INFO [2022-06-15 06:34:56,121] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1856
+INFO [2022-06-15 06:37:17,286] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-15 06:37:17,828] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-15 06:37:19,003] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1897
+INFO [2022-06-15 06:37:32,513] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-15 06:37:33,146] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-15 06:37:33,695] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 2034
+INFO [2022-06-15 06:37:51,019] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 2036
+INFO [2022-06-15 06:38:25,225] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 2035
+INFO [2022-06-15 06:38:38,274] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 2035
+INFO [2022-06-15 06:38:49,360] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 2035
+INFO [2022-06-15 06:40:59,493] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-15 06:40:59,955] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-15 06:41:06,233] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-15 06:41:06,682] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-15 06:41:10,942] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 1898
+INFO [2022-06-15 06:41:48,095] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/forms.py changed, reloading.
+INFO [2022-06-15 06:41:48,620] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-15 06:41:49,341] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 2035
+INFO [2022-06-15 06:41:57,469] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 2035

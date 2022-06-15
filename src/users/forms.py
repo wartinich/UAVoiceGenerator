@@ -36,7 +36,7 @@ class UpdateUserForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ['email', 'username', 'first_name', 'last_name', 'last_name', 'birth_date', 'avatar_image']
+        fields = ['email', 'username', 'first_name', 'last_name', 'last_name', 'birth_date', 'sex', 'avatar_image']
 
 
 class CustomChangePasswordForm(PasswordChangeForm):
