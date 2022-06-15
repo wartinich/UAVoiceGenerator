@@ -2653,3 +2653,5 @@ INFO [2022-06-15 12:31:14,343] - [django.utils.autoreload:run_with_reloader:677]
 INFO [2022-06-15 12:33:00,242] - [django.server:log_message:187] "GET /logout/ HTTP/1.1" 200 1080
 INFO [2022-06-15 12:33:01,836] - [django.server:log_message:187] "GET /logout/ HTTP/1.1" 200 1080
 WARNING [2022-06-15 12:48:16,790] - [django.request:log_response:241] Not Found: /signup/
+WARNING [2022-06-15 14:03:23,353] - [django.request:log_response:241] Not Found: /password-reset-confirm/
+WARNING [2022-06-15 14:06:22,809] - [django.request:log_response:241] Not Found: /password-reset-confirm/
