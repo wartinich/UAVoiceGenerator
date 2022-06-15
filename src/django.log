@@ -2649,3 +2649,7 @@ INFO [2022-06-15 12:29:15,499] - [django.utils.autoreload:trigger_reload:266] /h
 INFO [2022-06-15 12:29:16,088] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
 INFO [2022-06-15 12:29:28,827] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/users/views.py changed, reloading.
 INFO [2022-06-15 12:29:29,290] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-15 12:31:14,343] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-15 12:33:00,242] - [django.server:log_message:187] "GET /logout/ HTTP/1.1" 200 1080
+INFO [2022-06-15 12:33:01,836] - [django.server:log_message:187] "GET /logout/ HTTP/1.1" 200 1080
+WARNING [2022-06-15 12:48:16,790] - [django.request:log_response:241] Not Found: /signup/
