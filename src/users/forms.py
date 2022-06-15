@@ -1,6 +1,6 @@
 from django import forms
 from users.models import User
-from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm, PasswordChangeForm
 
 
 class RegisterForm(UserCreationForm):
@@ -23,3 +23,26 @@ class LoginUserForm(AuthenticationForm):
     email = forms.EmailField(required=True, widget=forms.EmailInput(attrs={'placeholder': 'Email'}))
     username = forms.CharField(required=True, widget=forms.TextInput(attrs={'placeholder': 'Username'}))
     password = forms.CharField(required=True, widget=forms.PasswordInput(attrs={'placeholder': 'Password'}))
+
+
+class UpdateUserForm(forms.ModelForm):
+    """Update User"""
+    email = forms.EmailField(widget=forms.EmailInput(attrs={'placeholder': 'Email'}))
+    username = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Username'}))
+    first_name = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'First name'}))
+    last_name = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Last name'}))
+    birth_date = forms.DateField(widget=forms.DateInput(attrs={'type': 'date'}))
+    avatar_image = forms.ImageField(widget=forms.FileInput())
+
+    class Meta:
+        model = User
+        fields = ['email', 'username', 'first_name', 'last_name', 'last_name', 'birth_date', 'sex', 'avatar_image']
+
+
+class CustomChangePasswordForm(PasswordChangeForm):
+    """Customize PasswordChangeForm"""
+    old_password = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'Old password'}))
+    new_password1 = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'New password'}))
+    new_password2 = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'Confirm new password'}))
+
+
