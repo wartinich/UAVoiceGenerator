@@ -18,13 +18,35 @@ class RegisterPageView(View):
         return render(request, self.template_name, context)
 
     def post(self, request):
-        form = self.form_class(request, data=request.POST)
+        form = self.form_class(request.POST)
         if form.is_valid():
-            user = form.data()
-            login(request, user)
-            messages.success(request, "Registration successful.")
-        else:
-            messages.error(request, "Invalid form(Invalid username or password)")
+            form.save()
+
+            email = form.cleaned_data.get('email')
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password1')
+            first_name = form.cleaned_data.get('first_name')
+            last_name = form.cleaned_data.get('last_name')
+            birth_date = form.cleaned_data.get('birth_date')
+            avatar_image = form.cleaned_data.get('avatar_image')
+            sex = form.cleaned_data.get('sex')
+
+            user = authenticate(
+                email=email,
+                username=username,
+                password=password,
+                first_name=first_name,
+                last_name=last_name,
+                birth_date=birth_date,
+                avatar_image=avatar_image,
+                sex=sex
+            )
+
+            if user is not None:
+                login(request, user)
+                return redirect("profile")
+            else:
+                messages.error(request, "Invalid username or password.")
 
         context = {
             'form': self.form_class
@@ -46,19 +68,17 @@ class LoginPageView(View):
     def post(self, request):
         form = self.form_class(request, data=request.POST)
         if form.is_valid():
-            email = form.cleaned_data.get('email')
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
-            user = authenticate(email=email, username=username, password=password)
+            user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
                 messages.info(request, f"You are now logged in as {username}.")
-                return redirect("schema-swagger-ui")
+                return redirect("profile")
             else:
                 messages.error(request, "Invalid username or password.")
         else:
             messages.error(request,"Invalid form(Invalid username or password)")
-            print('Invalid')
 
         context={
             'form': self.form_class
@@ -83,7 +103,7 @@ class UpdateUserView(LoginRequiredMixin, View):
         if form.is_valid():
             form.save()
             messages.success(request, 'Profile updated successfully')
-            return redirect('schema-swagger-ui')
+            return redirect('profile')
         else:
             messages.error(request, "Invalid form(Invalid username or password)")
 
