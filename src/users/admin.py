@@ -13,6 +13,7 @@ class UserAdmin(CustomUserAdmin):
         ('Personal info', {'fields': ('first_name', 'last_name', 'email', 'avatar_image', 'birth_date', 'sex')}),
         ('Permission', {'fields': ('is_superuser', 'is_active', 'is_staff')})
     )
+    ordering = ['-id',]
 
     #Show avatar_image at admin
     def show_avatar(self, obj):

@@ -101,12 +101,12 @@ class UpdateUserView(LoginRequiredMixin, View):
 
     def get(self, request):
         context = {
-            'form': self.form_class,
+            'form': self.form_class(instance=self.request.user),
         }
         return render(request, self.template_name, context)
 
     def post(self, request):
-        form = self.form_class(request.POST, request.FILES, instance=request.user)
+        form = self.form_class(request.POST, request.FILES, instance=self.request.user)
 
         if form.is_valid():
             form.save()
