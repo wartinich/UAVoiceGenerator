@@ -2872,3 +2872,21 @@ INFO [2022-06-16 07:12:08,391] - [django.server:log_message:187] "POST /profile/
 INFO [2022-06-16 07:12:08,415] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 2065
 INFO [2022-06-16 07:12:14,233] - [django.server:log_message:187] "GET /admin/users/user/3/change/ HTTP/1.1" 200 11392
 INFO [2022-06-16 07:12:14,256] - [django.server:log_message:187] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO [2022-06-16 07:14:31,676] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-16 07:19:47,018] - [django.server:log_message:187] "GET /swagger/ HTTP/1.1" 200 2232
+INFO [2022-06-16 07:19:47,045] - [django.server:log_message:187] "GET /static/drf-yasg/style.css HTTP/1.1" 304 0
+INFO [2022-06-16 07:19:47,054] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO [2022-06-16 07:19:47,055] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO [2022-06-16 07:19:47,061] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO [2022-06-16 07:19:47,066] - [django.server:log_message:187] "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO [2022-06-16 07:19:47,070] - [django.server:log_message:187] "GET /static/drf-yasg/url-polyfill.min.js HTTP/1.1" 304 0
+INFO [2022-06-16 07:19:47,074] - [django.server:log_message:187] "GET /static/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO [2022-06-16 07:19:47,080] - [django.server:log_message:187] "GET /static/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO [2022-06-16 07:19:47,274] - [django.server:log_message:187] "GET /swagger/?format=openapi HTTP/1.1" 200 2302
+WARNING [2022-06-16 07:22:56,787] - [django.request:log_response:241] Not Found: /token/
+WARNING [2022-06-16 07:24:25,006] - [django.request:log_response:241] Not Found: /token/
+WARNING [2022-06-16 07:25:10,190] - [django.request:log_response:241] Unauthorized: /api/token/
+INFO [2022-06-16 07:25:41,591] - [django.server:log_message:187] "POST /api/token/ HTTP/1.1" 200 438
+WARNING [2022-06-16 07:26:37,274] - [django.request:log_response:241] Unauthorized: /api/token/
+WARNING [2022-06-16 07:31:18,753] - [django.request:log_response:241] Not Found: /apitoken/
+WARNING [2022-06-16 07:31:38,254] - [django.request:log_response:241] Unauthorized: /api/token/

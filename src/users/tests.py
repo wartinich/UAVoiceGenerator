@@ -2,6 +2,7 @@ from users.models import User
 from django.test import TestCase
 from django.urls import reverse
 
+
 class SignUpTest(TestCase):
     def setUp(self) -> None:
         self.email = 'kolpk@gmail.com'
@@ -49,7 +50,7 @@ class LogOutTest(TestCase):
         self.assertEqual(response.status_code, 200)
 
 
-class ResetPassword(TestCase):
+class ResetPasswordTest(TestCase):
     def test_reset_password_url(self):
         response = self.client.get('/password-reset/')
         self.assertEqual(response.status_code, 200)
@@ -65,5 +66,3 @@ class ResetPassword(TestCase):
     def test_reset_password_complete(self):
         response = self.client.get('/password-reset-complete/')
         self.assertEqual(response.status_code, 200)
-
-
