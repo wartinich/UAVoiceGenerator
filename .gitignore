@@ -13,6 +13,9 @@ idea
 *.egg
 .env
 
+celery.log
+django.log
+
 dist
 db.sqlite3
 
@@ -30,3 +33,5 @@ doc
 home.rst
 
 .pytest_cache
+
+files/

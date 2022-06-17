@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block visual %}
+<style type="text/tailwindcss">
+    .register_form{
+        @apply bg-gray-200 text-center m-auto p-3 rounded-sm w-72 h-max block absolute right-0 bottom-0 top-0 left-0
+    }
+
+    input{
+        @apply block text-center rounded p-1 m-2 ml-0 w-full focus:outline-none outline-none
+    }
+
+    .linkers{
+        @apply flex justify-center p-2
+    }
+
+    .btn{
+        @apply bg-yellow-400 rounded p-0.5 w-1/2 hover:bg-yellow-500
+    }
+
+</style>
+{% endblock %}
+
+{% block content %}
+    <form class="register_form" method="POST">
+        <h1 class="text-xl font-bold text-center text-neutral-700" >Sign Up</h1>
+        {% csrf_token %}
+        {{ form.email }}
+        {{ form.username }}
+        {{ form.first_name }}
+        {{ form.last_name }}
+        {{ form.avatar_image }}
+        {{ form.birth_date }}
+        {{ form.sex }}
+        {{ form.password1 }}
+        {{ form.password2 }}
+        <button class="btn">Sign Up</button>
+        <div class="linkers">
+            <a class="sign_up" href="{% url 'login' %}">Already have an account?</a>
+        </div>
+    </form>
+{% endblock %}

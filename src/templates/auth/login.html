@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block visual %}
+<style type="text/tailwindcss">
+    .login_form{
+        @apply bg-gray-200 text-center m-auto p-3 rounded-sm w-72 h-52 block absolute right-0 bottom-0 top-0 left-0
+    }
+
+    input{
+        @apply block text-center rounded p-1 m-2 ml-0 w-full focus:outline-none outline-none
+    }
+
+    .linkers{
+        @apply flex justify-between p-2
+    }
+
+    .btn{
+        @apply bg-yellow-400 rounded p-0.5 w-1/2 hover:bg-yellow-500
+    }
+
+</style>
+{% endblock %}
+
+{% block content %}
+    <form class="login_form" method="POST">
+        <h1 class="text-xl font-bold text-center text-neutral-700">Login</h1>
+        {% csrf_token %}
+        {{ form.email }}
+        {{ form.username }}
+        {{ form.password }}
+        <button class="btn">Login</button>
+        <div class="linkers">
+            <a class="forgot_password" href="{% url 'password_reset' %}">Forgot password?</a>
+            <a class="sign_up" href="{% url 'sign_up' %}">Sign up</a>
+        </div>
+    </form>
+{% endblock %}

@@ -3,6 +3,7 @@ version: "3"
 services:
   db:
     image: postgres:12.0-alpine
+    container_name: db
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:
@@ -18,6 +19,49 @@ services:
     ports:
       - 6379:6379
 
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.4.0
+    container_name: elasticsearch
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    cap_add:
+      - IPC_LOCK
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:6.3.2
+    container_name: logstash
+    environment:
+      XPACK_MONITORING_ENABLED: "false"
+    volumes:
+      - ./config/pipelines.yml:/usr/share/logstash/config/pipelines.yml:ro
+      - ./config/pipelines:/usr/share/logstash/config/pipelines:ro
+    ports:
+      - 5046:5046
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.4.0
+    container_name: kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - 5601:5601
+    depends_on:
+      - elasticsearch
+
 
 volumes:
   postgres_data:
+  elasticsearch-data:
+    driver: local
