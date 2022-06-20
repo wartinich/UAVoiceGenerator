@@ -39,17 +39,6 @@ services:
     ports:
       - 9200:9200
 
-  logstash:
-    image: docker.elastic.co/logstash/logstash:6.3.2
-    container_name: logstash
-    environment:
-      XPACK_MONITORING_ENABLED: "false"
-    volumes:
-      - ./config/pipelines.yml:/usr/share/logstash/config/pipelines.yml:ro
-      - ./config/pipelines:/usr/share/logstash/config/pipelines:ro
-    ports:
-      - 5046:5046
-
   kibana:
     image: docker.elastic.co/kibana/kibana:7.4.0
     container_name: kibana
