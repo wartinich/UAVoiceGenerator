@@ -25,6 +25,7 @@ urlpatterns = [
 
     #Apps
     path('', include('users.urls')),
+    path('', include('voices.urls')),
 
     #JWT
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),

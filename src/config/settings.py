@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     
     'users',
+    'voices'
 ]
 
 MIDDLEWARE = [

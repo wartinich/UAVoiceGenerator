@@ -2890,3 +2890,160 @@ INFO [2022-06-16 07:25:41,591] - [django.server:log_message:187] "POST /api/toke
 WARNING [2022-06-16 07:26:37,274] - [django.request:log_response:241] Unauthorized: /api/token/
 WARNING [2022-06-16 07:31:18,753] - [django.request:log_response:241] Not Found: /apitoken/
 WARNING [2022-06-16 07:31:38,254] - [django.request:log_response:241] Unauthorized: /api/token/
+INFO [2022-06-21 05:01:08,675] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-21 05:01:39,671] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+WARNING [2022-06-21 05:01:42,580] - [django.request:log_response:241] Not Found: /
+WARNING [2022-06-21 05:01:42,581] - [django.server:log_message:187] "GET / HTTP/1.1" 404 4569
+WARNING [2022-06-21 05:01:42,879] - [django.request:log_response:241] Not Found: /favicon.ico
+WARNING [2022-06-21 05:01:42,880] - [django.server:log_message:187] "GET /favicon.ico HTTP/1.1" 404 4620
+INFO [2022-06-21 05:02:00,516] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/config/settings.py changed, reloading.
+INFO [2022-06-21 05:02:01,076] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-21 05:02:14,701] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/config/urls.py changed, reloading.
+INFO [2022-06-21 05:02:15,218] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-21 05:02:17,343] - [django.server:log_message:187] "GET / HTTP/1.1" 200 413
+INFO [2022-06-21 05:02:22,022] - [django.server:log_message:187] "GET /login/ HTTP/1.1" 302 0
+INFO [2022-06-21 05:02:22,053] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 2128
+INFO [2022-06-21 05:02:22,715] - [django.server:log_message:187] "GET /login HTTP/1.1" 301 0
+ERROR [2022-06-21 05:03:29,904] - [django.request:log_response:241] Internal Server Error: /voice_generator/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/redis/connection.py", line 609, in connect
+    sock = self.retry.call_with_retry(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/redis/connection.py", line 610, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/redis/connection.py", line 643, in _connect
+    for res in socket.getaddrinfo(
+  File "/usr/local/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/backends/redis.py", line 119, in reconnect_on_error
+    yield
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/backends/redis.py", line 169, in _consume_from
+    self._pubsub.subscribe(key)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/redis/client.py", line 1589, in subscribe
+    ret_val = self.execute_command("SUBSCRIBE", *new_channels.keys())
+  File "/home/wartinich/.local/lib/python3.10/site-packages/redis/client.py", line 1430, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/redis/connection.py", line 1383, in get_connection
+    connection.connect()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/redis/connection.py", line 615, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to redis:6379. Name or service not known.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/redis/connection.py", line 609, in connect
+    sock = self.retry.call_with_retry(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/redis/connection.py", line 610, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/redis/connection.py", line 643, in _connect
+    for res in socket.getaddrinfo(
+  File "/usr/local/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/kombu/connection.py", line 446, in _reraise_as_library_errors
+    yield
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/app/base.py", line 787, in send_task
+    self.backend.on_task_call(P, task_id)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/backends/redis.py", line 365, in on_task_call
+    self.result_consumer.consume_from(task_id)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/backends/redis.py", line 161, in consume_from
+    return self.start(task_id)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/backends/redis.py", line 139, in start
+    self._consume_from(initial_task_id)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/backends/redis.py", line 168, in _consume_from
+    with self.reconnect_on_error():
+  File "/usr/local/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/backends/redis.py", line 122, in reconnect_on_error
+    self._ensure(self._reconnect_pubsub, ())
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/backends/redis.py", line 376, in ensure
+    return retry_over_time(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/kombu/utils/functional.py", line 312, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/backends/redis.py", line 106, in _reconnect_pubsub
+    metas = self.backend.client.mget(self.subscribed_to)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/redis/commands/core.py", line 1887, in mget
+    return self.execute_command("MGET", *args, **options)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/redis/client.py", line 1232, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/redis/connection.py", line 1383, in get_connection
+    connection.connect()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/redis/connection.py", line 615, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to redis:6379. Name or service not known.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/views.py", line 15, in get
+    generate_voice.delay()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/app/base.py", line 785, in send_task
+    with P.connection._reraise_as_library_errors():
+  File "/usr/local/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/kombu/connection.py", line 450, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: Error -2 connecting to redis:6379. Name or service not known.
+ERROR [2022-06-21 05:03:29,914] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 500 258190
+INFO [2022-06-21 05:10:51,851] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-21 05:11:02,078] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:15:29,081] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-21 05:15:35,104] - [django.server:log_message:187] "GET / HTTP/1.1" 200 413
+INFO [2022-06-21 05:15:43,723] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:16:14,665] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:16:14,826] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:16:15,006] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:16:15,163] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:16:15,323] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:16:58,961] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-21 05:16:59,677] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-21 05:17:03,872] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:17:04,337] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:18:54,610] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-21 05:19:03,737] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:19:04,502] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:19:13,414] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:19:13,575] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:19:13,756] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:19:13,926] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:19:14,098] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:19:39,793] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-21 05:19:40,423] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-21 05:19:42,689] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:23:57,993] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-21 05:24:01,375] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:24:36,849] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-21 05:24:37,480] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-21 05:24:39,724] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:24:43,457] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:24:44,060] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:24:44,232] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:24:44,454] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 05:24:44,564] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
