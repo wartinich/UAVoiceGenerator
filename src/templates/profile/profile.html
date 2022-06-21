@@ -13,7 +13,7 @@
     }
 
     .linkers{
-        @apply flex justify-center p-2
+        @apply flex justify-between p-2
     }
 
     .btn{
@@ -42,6 +42,7 @@
     <button class="btn">Save Changes</button>
     <div class="linkers">
         <a class="forgot_password" href="{% url 'change_password' %}">Change password</a>
+        <a class="forgot_password" href="{% url 'logout' %}">Logout</a>
     </div>
 </form>
 {% endblock %}
