@@ -12,6 +12,6 @@ class HomePage(View):
 
 class VoiceGeneratorPage(LoginRequiredMixin, View):
     def get(self, request):
-        generate_voice.delay()
+        generate_voice()
         return HttpResponse("Voice generating...")
         # return render(request,  'voice_generator/voice_generator.html')
