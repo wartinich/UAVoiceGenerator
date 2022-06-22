@@ -3348,3 +3348,4 @@ TypeError: TTSModelMultiAcc_v3.save_wav() got multiple values for argument 'text
 ERROR [2022-06-22 12:08:50,417] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 500 91430
 INFO [2022-06-22 12:10:37,948] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
 INFO [2022-06-22 12:10:38,660] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-22 12:16:08,061] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
