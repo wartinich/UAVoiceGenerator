@@ -3047,3 +3047,304 @@ INFO [2022-06-21 05:24:44,060] - [django.server:log_message:187] "GET /voice_gen
 INFO [2022-06-21 05:24:44,232] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
 INFO [2022-06-21 05:24:44,454] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
 INFO [2022-06-21 05:24:44,564] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 06:19:23,749] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-21 06:19:27,028] - [django.server:log_message:187] "GET / HTTP/1.1" 200 413
+INFO [2022-06-21 06:19:31,106] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 06:19:45,359] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-21 06:19:46,310] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-21 06:19:49,557] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 06:20:20,077] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-21 06:20:21,070] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-21 06:21:36,421] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-21 06:34:27,168] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 7392
+WARNING [2022-06-21 06:34:27,252] - [django.request:log_response:241] Not Found: /docs/images/people/profile-picture-3.jpg
+WARNING [2022-06-21 06:34:27,254] - [django.request:log_response:241] Not Found: /docs/images/logo.svg
+WARNING [2022-06-21 06:34:27,255] - [django.server:log_message:187] "GET /docs/images/people/profile-picture-3.jpg HTTP/1.1" 404 5017
+WARNING [2022-06-21 06:34:27,255] - [django.server:log_message:187] "GET /docs/images/logo.svg HTTP/1.1" 404 4957
+INFO [2022-06-21 06:35:51,680] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 7340
+WARNING [2022-06-21 06:35:51,695] - [django.request:log_response:241] Not Found: /docs/images/people/profile-picture-3.jpg
+WARNING [2022-06-21 06:35:51,696] - [django.server:log_message:187] "GET /docs/images/people/profile-picture-3.jpg HTTP/1.1" 404 5017
+INFO [2022-06-21 06:37:54,880] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 7353
+WARNING [2022-06-21 06:37:54,897] - [django.request:log_response:241] Not Found: /profile/avatars/les_derevya_tuman_110131_1920x1080_WKobdi3.jpg
+WARNING [2022-06-21 06:37:54,898] - [django.server:log_message:187] "GET /profile/avatars/les_derevya_tuman_110131_1920x1080_WKobdi3.jpg HTTP/1.1" 404 5083
+INFO [2022-06-21 06:37:56,127] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 7353
+WARNING [2022-06-21 06:37:56,142] - [django.request:log_response:241] Not Found: /profile/avatars/les_derevya_tuman_110131_1920x1080_WKobdi3.jpg
+WARNING [2022-06-21 06:37:56,142] - [django.server:log_message:187] "GET /profile/avatars/les_derevya_tuman_110131_1920x1080_WKobdi3.jpg HTTP/1.1" 404 5083
+INFO [2022-06-21 06:37:56,980] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 7353
+WARNING [2022-06-21 06:37:56,995] - [django.request:log_response:241] Not Found: /profile/avatars/les_derevya_tuman_110131_1920x1080_WKobdi3.jpg
+WARNING [2022-06-21 06:37:56,998] - [django.server:log_message:187] "GET /profile/avatars/les_derevya_tuman_110131_1920x1080_WKobdi3.jpg HTTP/1.1" 404 5083
+INFO [2022-06-21 06:37:57,354] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 7353
+WARNING [2022-06-21 06:37:57,370] - [django.request:log_response:241] Not Found: /profile/avatars/les_derevya_tuman_110131_1920x1080_WKobdi3.jpg
+WARNING [2022-06-21 06:37:57,371] - [django.server:log_message:187] "GET /profile/avatars/les_derevya_tuman_110131_1920x1080_WKobdi3.jpg HTTP/1.1" 404 5083
+INFO [2022-06-21 06:38:15,445] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 7376
+WARNING [2022-06-21 06:38:15,467] - [django.request:log_response:241] Not Found: /profile/<input type=
+WARNING [2022-06-21 06:38:15,468] - [django.server:log_message:187] "GET /profile/%3Cinput%20type= HTTP/1.1" 404 4969
+INFO [2022-06-21 06:38:24,497] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 7359
+WARNING [2022-06-21 06:38:24,510] - [django.request:log_response:241] Not Found: /profile/<input type=
+WARNING [2022-06-21 06:38:24,510] - [django.server:log_message:187] "GET /profile/%3Cinput%20type= HTTP/1.1" 404 4969
+INFO [2022-06-21 06:38:32,052] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 7360
+WARNING [2022-06-21 06:38:32,068] - [django.request:log_response:241] Not Found: /profile/<input type=
+WARNING [2022-06-21 06:38:32,069] - [django.server:log_message:187] "GET /profile/%3Cinput%20type= HTTP/1.1" 404 4969
+INFO [2022-06-21 06:39:11,013] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 7340
+WARNING [2022-06-21 06:39:11,029] - [django.request:log_response:241] Not Found: /docs/images/people/profile-picture-3.jpg
+WARNING [2022-06-21 06:39:11,030] - [django.server:log_message:187] "GET /docs/images/people/profile-picture-3.jpg HTTP/1.1" 404 5017
+INFO [2022-06-21 06:39:42,762] - [django.server:log_message:187] "GET /profile/ HTTP/1.1" 200 7360
+INFO [2022-06-22 11:45:03,169] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-22 11:45:10,060] - [django.server:log_message:187] "GET / HTTP/1.1" 200 413
+WARNING [2022-06-22 11:45:10,400] - [django.request:log_response:241] Not Found: /favicon.ico
+WARNING [2022-06-22 11:45:10,400] - [django.server:log_message:187] "GET /favicon.ico HTTP/1.1" 404 4930
+ERROR [2022-06-22 11:45:14,656] - [django.request:log_response:241] Internal Server Error: /voice_generator/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/views.py", line 15, in get
+    generate_voice()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/local.py", line 188, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/app/task.py", line 392, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/tasks.py", line 11, in generate_voice
+    local_file = settings.MEDIA_ROOT / 'model.pt'
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+ERROR [2022-06-22 11:45:14,657] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 500 91163
+INFO [2022-06-22 11:47:32,789] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:47:33,657] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-22 11:47:55,651] - [django.request:log_response:241] Internal Server Error: /voice_generator/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/views.py", line 15, in get
+    generate_voice()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/local.py", line 188, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/app/task.py", line 392, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/tasks.py", line 23, in generate_voice
+    with FileSystemStorage.open(location=settings.MEDIA_ROOT):
+NameError: name 'FileSystemStorage' is not defined
+ERROR [2022-06-22 11:47:55,652] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 500 91520
+INFO [2022-06-22 11:48:48,822] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:48:49,543] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-22 11:49:56,264] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:49:56,966] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-22 11:50:33,745] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:50:34,492] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-22 11:50:54,745] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:50:55,422] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-22 11:51:01,181] - [django.request:log_response:241] Internal Server Error: /voice_generator/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/views.py", line 15, in get
+    generate_voice()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/local.py", line 188, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/app/task.py", line 392, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/tasks.py", line 24, in generate_voice
+    with FileSystemStorage.open(
+TypeError: Storage.open() got an unexpected keyword argument 'location'
+ERROR [2022-06-22 11:51:01,182] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 500 91866
+INFO [2022-06-22 11:51:47,533] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:51:48,204] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-22 11:51:55,134] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:51:55,829] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-22 11:51:59,432] - [django.request:log_response:241] Internal Server Error: /voice_generator/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/views.py", line 15, in get
+    generate_voice()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/local.py", line 188, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/app/task.py", line 392, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/tasks.py", line 12, in generate_voice
+    local_file = settings.MEDIA_ROOT / 'model.pt'
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+ERROR [2022-06-22 11:51:59,433] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 500 91323
+INFO [2022-06-22 11:52:47,105] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:52:47,745] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-22 11:53:26,465] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:53:27,287] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-22 11:53:30,254] - [django.request:log_response:241] Internal Server Error: /voice_generator/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/views.py", line 15, in get
+    generate_voice()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/local.py", line 188, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/app/task.py", line 392, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/tasks.py", line 24, in generate_voice
+    with FileSystemStorage.open(location=settings.BASE_DIR / 'files/media/voices/'):
+TypeError: Storage.open() got an unexpected keyword argument 'location'
+ERROR [2022-06-22 11:53:30,255] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 500 91680
+INFO [2022-06-22 11:55:13,334] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:55:14,084] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-22 11:55:26,266] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:55:27,081] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-22 11:55:39,179] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:55:40,084] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-22 11:55:45,941] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:55:46,987] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-22 11:56:01,182] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:56:01,906] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-22 11:56:06,673] - [django.request:log_response:241] Internal Server Error: /voice_generator/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/views.py", line 15, in get
+    generate_voice()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/local.py", line 188, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/app/task.py", line 392, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/tasks.py", line 12, in generate_voice
+    local_file = default_storage.open("files/media/model.pt", mode="rbs")
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/files/storage.py", line 41, in open
+    return self._open(name, mode)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/files/storage.py", line 277, in _open
+    return File(open(self.path(name), mode))
+ValueError: invalid mode: 'rbs'
+ERROR [2022-06-22 11:56:06,675] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 500 99402
+INFO [2022-06-22 11:56:15,085] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:56:15,748] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-22 11:56:18,117] - [django.request:log_response:241] Internal Server Error: /voice_generator/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/views.py", line 15, in get
+    generate_voice()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/local.py", line 188, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/app/task.py", line 392, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/tasks.py", line 12, in generate_voice
+    local_file = default_storage.open("files/media/model.pt", mode="rb")
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/files/storage.py", line 41, in open
+    return self._open(name, mode)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/files/storage.py", line 277, in _open
+    return File(open(self.path(name), mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wartinich/Projects/voice_generator/src/files/media/files/media/model.pt'
+ERROR [2022-06-22 11:56:18,119] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 500 99730
+INFO [2022-06-22 11:57:12,150] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:57:12,865] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-22 11:57:14,553] - [django.request:log_response:241] Internal Server Error: /voice_generator/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/views.py", line 15, in get
+    generate_voice()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/local.py", line 188, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/app/task.py", line 392, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/tasks.py", line 14, in generate_voice
+    if not os.path.isfile(local_file):
+  File "/usr/local/lib/python3.10/genericpath.py", line 30, in isfile
+    st = os.stat(path)
+TypeError: stat: path should be string, bytes, os.PathLike or integer, not File
+ERROR [2022-06-22 11:57:14,554] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 500 94972
+INFO [2022-06-22 11:57:51,803] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:57:52,647] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-22 11:59:11,477] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 11:59:12,203] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-22 11:59:17,430] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-22 11:59:35,277] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-22 11:59:56,912] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-22 12:00:02,146] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-22 12:01:54,797] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-22 12:03:32,145] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+INFO [2022-06-22 12:03:39,964] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 200 19
+INFO [2022-06-22 12:08:44,377] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 12:08:45,058] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
+ERROR [2022-06-22 12:08:50,413] - [django.request:log_response:241] Internal Server Error: /voice_generator/
+Traceback (most recent call last):
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/views.py", line 15, in get
+    generate_voice()
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/local.py", line 188, in __call__
+    return self._get_current_object()(*a, **kw)
+  File "/home/wartinich/.local/lib/python3.10/site-packages/celery/app/task.py", line 392, in __call__
+    return self.run(*args, **kwargs)
+  File "/home/wartinich/Projects/voice_generator/src/voices/tasks.py", line 23, in generate_voice
+    model.save_wav(settings.BASE_DIR / 'files/media', text=text, speaker=speaker, sample_rate=rate)
+TypeError: TTSModelMultiAcc_v3.save_wav() got multiple values for argument 'text'
+ERROR [2022-06-22 12:08:50,417] - [django.server:log_message:187] "GET /voice_generator/ HTTP/1.1" 500 91430
+INFO [2022-06-22 12:10:37,948] - [django.utils.autoreload:trigger_reload:266] /home/wartinich/Projects/voice_generator/src/voices/tasks.py changed, reloading.
+INFO [2022-06-22 12:10:38,660] - [django.utils.autoreload:run_with_reloader:677] Watching for file changes with StatReloader
