@@ -6,7 +6,7 @@ from voices.models import Record, RecordHistory
 
 
 @shared_task
-def generate_voice(user):
+def generate_voice(user, text):
     device = torch.device('cpu')
     torch.set_num_threads(4)
     local_file = settings.BASE_DIR / 'files/media/model.pt'
@@ -17,10 +17,8 @@ def generate_voice(user):
     model = torch.package.PackageImporter(local_file).load_pickle("tts_models", "model")
     model.to(device)
 
-    text = "Привіт! Як справи?"
     rate = 48000
     speaker = 'mykyta'
-
 
     record = Record.objects.create(
         record_text=text,

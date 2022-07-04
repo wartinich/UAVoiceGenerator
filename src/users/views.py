@@ -86,7 +86,7 @@ class LoginPageView(View):
             else:
                 messages.error(request, "Invalid username or password.")
         else:
-            messages.error(request,"Invalid form(Invalid username or password)")
+            messages.error(request, "Invalid form(Invalid username or password)")
 
         context={
             'form': self.form_class

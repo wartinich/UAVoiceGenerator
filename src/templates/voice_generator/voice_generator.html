@@ -5,5 +5,10 @@
 {% block visual %}{% endblock %}
 
 {% block content %}
-
+    <form class="login_form" method="POST">
+        <h1 class="text-xl font-bold text-center text-neutral-700">Create record</h1>
+        {% csrf_token %}
+        {{ form.record_text }}
+        <button>Generate</button>
+    </form>
 {% endblock %}

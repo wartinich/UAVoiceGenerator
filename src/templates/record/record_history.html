@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Record history{% endblock %}
+
+{% block visual %}{% endblock %}
+
+{% block content %}
+    {% for record in history %}
+        <div>
+            <h2>{{ record.record.record_text }}</h2>
+            <p>{{ record.record.file.url }}</p>
+            <p>{{ record.created_at }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

@@ -25,5 +25,9 @@ class RecordHistory(models.Model):
     )
     created_at = models.DateTimeField(verbose_name='Created', auto_now_add=True, auto_now=False)
 
+    class Meta:
+        verbose_name = 'Record History'
+        verbose_name_plural = 'Record Histories'
+
 
 
