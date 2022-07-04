@@ -13,7 +13,7 @@ class WelcomePage(View):
 
 class VoiceGenerator(LoginRequiredMixin, View):
     form_class = CreateRecord
-    template_name = 'voice_generator/voice_generator.html'
+    template_name = 'record/voice_generator.html'
 
     def get(self, request):
         context = {
