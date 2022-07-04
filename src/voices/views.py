@@ -11,7 +11,7 @@ class WelcomePage(View):
         return render(request, 'home/index.html')
 
 
-class VoiceGenerator(LoginRequiredMixin, View):
+class VoiceGeneratorPage(LoginRequiredMixin, View):
     form_class = CreateRecord
     template_name = 'record/voice_generator.html'
 
