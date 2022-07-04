@@ -121,3 +121,11 @@ class UpdateUserView(LoginRequiredMixin, View):
 
         return render(request, self.template_name, context)
 
+
+class DeactivateUser(LoginRequiredMixin, View):
+    def get(self, request):
+        user = request.user
+        user.is_active = False
+        user.save()
+        return redirect("login")
+
