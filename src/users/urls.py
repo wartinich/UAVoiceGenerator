@@ -1,15 +1,15 @@
 from django.urls import path
-from users.views import RegisterPageView, LoginPageView, UpdateUserView
+from users.views import RegisterPageView, LoginPageView, UpdateUserView, DeactivateUser
 from django.contrib.auth import views as auth_views
 from users.forms import CustomChangePasswordForm
 
 urlpatterns = [
     path('sign_up/', RegisterPageView.as_view(), name='sign_up'),
     path('login/', LoginPageView.as_view(), name='login'),
+    path('logout/', auth_views.LogoutView.as_view(template_name='auth/logout.html'), name='logout'),
+    path('deactivate/', DeactivateUser.as_view(), name='deactivate_user'),
 
     path('profile/', UpdateUserView.as_view(), name='profile'),
-
-    path('logout/', auth_views.LogoutView.as_view(template_name='auth/logout.html'), name='logout'),
 
     # Change password
     path('change-password/',
