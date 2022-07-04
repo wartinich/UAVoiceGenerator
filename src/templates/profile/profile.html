@@ -5,45 +5,65 @@
 {% block visual %}
 <style type="text/tailwindcss">
     .update_profile{
-        @apply bg-gray-200 text-center m-auto p-3 rounded-sm w-72 h-3/5 block absolute right-0 bottom-0 top-0 left-0
+        @apply bg-gray-200 m-auto p-3 rounded-sm block absolute right-0 bottom-0 top-0 left-0 w-2/5 h-3/5 bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700
     }
 
     input{
-        @apply block text-center rounded p-1 m-2 ml-0 w-full focus:outline-none outline-none
+        @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
     }
 
-    .linkers{
-        @apply p-2
+    select{
+        @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
     }
 
-    .btn{
-        @apply bg-yellow-400 rounded p-1 w-2/3 hover:bg-yellow-500
+    button{
+        @apply mx-auto
     }
-
-    h1{
-        @apply text-xl font-bold text-center text-neutral-700
-    }
-
 
 </style>
 {% endblock %}
 
 {% block content %}
-<form class="update_profile" method="POST" enctype="multipart/form-data">
+{% include 'nav/navbar.html' %}
+
+<form method="POST" class="update_profile" enctype="multipart/form-data">
     {% csrf_token %}
-    <h1>Profile update</h1>
-    {{ form.email }}
-    {{ form.username }}
-    {{ form.first_name }}
-    {{ form.last_name }}
-    {{ form.birth_date }}
-    {{ form.sex }}
-    {{ form.avatar_image }}
-    <button class="btn">Save Changes</button>
-    <div class="linkers">
-        <a href="{% url 'change_password' %}">Change password</a>
-        <a href="{% url 'logout' %}">Logout</a>
-        <a href="{% url 'deactivate_user' %}">Delete user</a>
+    <div class="grid gap-6 mb-6 lg:grid-cols-2 mb-0">
+        <div>
+            <label for="id_first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">First name</label>
+            {{ form.first_name }}
+        </div>
+        <div>
+            <label for="id_last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Last name</label>
+            {{ form.last_name }}
+        </div>
+        <div>
+            <label for="id_username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Username</label>
+            {{ form.username }}
+        </div>
+        <div>
+            <label for="id_email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
+            {{ form.email }}
+        </div>
+        <div>
+            <label for="id_birth_date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Birth date</label>
+            {{ form.birth_date }}
+        </div>
+        <div>
+            <label for="id_sex" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Sex</label>
+            {{ form.sex }}
+        </div>
+        <div class="mb-6">
+            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" for="id_file">Upload avatar</label>
+            {{ form.avatar_image }}
+        </div>
+
+    </div>
+    <button type="submit" class="text-white text-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save Changes</button>
+    <div class="text-sm font-medium text-gray-500 dark:text-gray-300 flex justify-center mt-5 mx-auto">
+        <a href="{% url 'change_password' %}" class="mx-auto text-blue-700 hover:underline dark:text-blue-500">Change Password</a>
+        <a href="{% url 'deactivate_user' %}" class="mx-auto text-blue-700 hover:underline dark:text-blue-500">Deactivate</a>
+        <a href="{% url 'logout' %}" class="mx-auto text-blue-700 hover:underline dark:text-blue-500">Logout</a>
     </div>
 </form>
 {% endblock %}

@@ -14,6 +14,7 @@ idea
 .env
 
 *.log
+*.wav
 
 dist
 db.sqlite3
