@@ -3,5 +3,7 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-
+    {% if user.is_authenticated %}
+        <a href="{% url 'voice_generate' %}">Generate Voice</a>
+    {% endif %}
 {% endblock %}

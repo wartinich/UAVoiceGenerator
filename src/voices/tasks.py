@@ -20,4 +20,5 @@ def generate_voice():
     rate = 48000
     speaker = 'mykyta'
 
-    model.save_wav(text=text, speaker=speaker, sample_rate=rate)
+    audio_path = model.save_wav(text=text, speaker=speaker, sample_rate=rate)
+
