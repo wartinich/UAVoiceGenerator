@@ -6,7 +6,7 @@ from voices.tasks import generate_voice
 from voices.models import RecordHistory
 
 
-class HomePage(View):
+class WelcomePage(View):
     def get(self, request):
         return render(request, 'home/index.html')
 
@@ -36,12 +36,13 @@ class VoiceGenerator(LoginRequiredMixin, View):
         return render(request, self.template_name, context=context)
 
 
-class VoiceHistoryPage(LoginRequiredMixin, ListView):
-    model = RecordHistory
+class VoiceHistoryPage(LoginRequiredMixin, View):
     template_name = 'record/record_history.html'
 
-    def get_context_data(self, request, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['history'] = RecordHistory.objects.select_related('record', 'user').filter(user=self.request.user)
-        return context
+    def get(self, request):
+        context = {
+            'records': RecordHistory.objects.select_related('record', 'user').filter(user=self.request.user)
+        }
+
+        return render(request, self.template_name, context)
 

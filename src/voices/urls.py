@@ -1,8 +1,9 @@
 from django.urls import path
-from voices.views import HomePage, VoiceGenerator
+from voices.views import HomePage, VoiceGeneratorPage, VoiceHistoryPage
 
 
 urlpatterns = [
-    path('', HomePage.as_view(), name='home'),
-    path('voice_generator/', VoiceGenerator.as_view(), name='voice_generate')
+    path('', WelcomePage.as_view(), name='home'),
+    path('voice_generator/', VoiceGeneratorPage.as_view(), name='voice_generate'),
+    path('history/', VoiceHistoryPage.as_view(), name='history'),
 ]

@@ -5,11 +5,11 @@
 {% block visual %}{% endblock %}
 
 {% block content %}
-    {% for record in history %}
+    {% for record in records %}
         <div>
             <h2>{{ record.record.record_text }}</h2>
             <p>{{ record.record.file.url }}</p>
-            <p>{{ record.created_at }}</p>
+            <p>{{ record.created_at|date:"d.m.Y" }}</p>
         </div>
     {% endfor %}
 {% endblock %}
