@@ -1,5 +1,11 @@
 from django.contrib import admin
-from voices.models import RecordHistory
+from voices.models import Record, RecordHistory
+
+
+@admin.register(Record)
+class RecordAdmin(admin.ModelAdmin):
+    list_display = ['id', 'record_text']
+    list_display_links = ['id', 'record_text']
 
 
 @admin.register(RecordHistory)

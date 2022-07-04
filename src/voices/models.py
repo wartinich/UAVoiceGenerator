@@ -6,6 +6,9 @@ class Record(models.Model):
     record_text = models.TextField(verbose_name='Record text', max_length=500)
     file = models.FileField(verbose_name='Record file', upload_to='voices/')
 
+    def __str__(self):
+        return str(self.id)
+
 
 class RecordHistory(models.Model):
     record = models.ForeignKey(

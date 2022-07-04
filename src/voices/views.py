@@ -12,5 +12,5 @@ class HomePage(View):
 
 class VoiceGenerator(LoginRequiredMixin, View):
     def get(self, request):
-        generate_voice()
+        generate_voice(user=self.request.user)
         return redirect("home")
