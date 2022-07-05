@@ -4,36 +4,39 @@
 
 {% block visual %}
 <style type="text/tailwindcss">
-    .login_form{
-        @apply bg-gray-200 text-center m-auto p-3 rounded-sm w-72 h-52 block absolute right-0 bottom-0 top-0 left-0
-    }
-
     input{
-        @apply block text-center rounded p-1 m-2 ml-0 w-full focus:outline-none outline-none
-    }
-
-    .linkers{
-        @apply flex justify-between p-2
-    }
-
-    .btn{
-        @apply bg-yellow-400 rounded p-0.5 w-1/2 hover:bg-yellow-500
+        @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white
     }
 
 </style>
 {% endblock %}
 
 {% block content %}
-    <form class="login_form" method="POST">
-        <h1 class="text-xl font-bold text-center text-neutral-700">Login</h1>
-        {% csrf_token %}
-        {{ form.email }}
-        {{ form.username }}
-        {{ form.password }}
-        <button class="btn">Login</button>
-        <div class="linkers">
-            <a class="forgot_password" href="{% url 'password_reset' %}">Forgot password?</a>
-            <a class="sign_up" href="{% url 'sign_up' %}">Sign up</a>
-        </div>
-    </form>
+    <div class="block absolute right-0 bottom-0 top-0 left-0 m-auto p-4 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700 h-max">
+        <form class="space-y-6" method="POST">
+            {% csrf_token %}
+            <h5 class="text-xl text-center font-medium text-gray-900 dark:text-white">Sign in</h5>
+            <div>
+                <label for="id_username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Username</label>
+                {{ form.username }}
+            </div>
+            <div>
+                <label for="id_password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Password</label>
+                {{ form.password }}
+            </div>
+            <div class="flex items-start">
+                <div class="flex items-start">
+                    <div class="flex items-center h-5">
+                        <input id="remember" type="checkbox" value="" class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required>
+                    </div>
+                    <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
+                </div>
+                <a href="{% url 'password_reset' %}" class="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Forgot Password?</a>
+            </div>
+            <button class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login</button>
+            <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                Not registered? <a href="{% url 'sign_up' %}" class="text-blue-700 hover:underline dark:text-blue-500">Create account</a>
+            </div>
+        </form>
+    </div>
 {% endblock %}

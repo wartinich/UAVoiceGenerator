@@ -82,13 +82,13 @@ class LoginPageView(View):
             if user is not None:
                 login(request, user)
                 messages.info(request, f"You are now logged in as {username}.")
-                return redirect("profile")
+                return redirect('profile')
             else:
                 messages.error(request, "Invalid username or password.")
         else:
             messages.error(request, "Invalid form(Invalid username or password)")
 
-        context={
+        context = {
             'form': self.form_class
         }
 

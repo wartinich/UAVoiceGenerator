@@ -12,8 +12,8 @@
 
 {% block content %}
     {% include 'nav/navbar.html' %}
-    <div class="block absolute right-0 bottom-0 top-0 left-0 m-auto w-72 h-64 p-4 bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
-        <form class="space-y-6" method="POST">
+    <div class="block absolute right-0 bottom-0 top-0 left-0 m-auto w-max h-max p-4 bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
+        <form class="space-y-4" method="POST">
             {% csrf_token %}
             <h5 class="text-xl text-center m-0 font-medium text-gray-900 dark:text-white">Voice generate</h5>
             <div>
