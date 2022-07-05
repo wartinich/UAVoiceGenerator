@@ -56,7 +56,7 @@ class ResetPasswordTest(TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_reset_password_form(self):
-        response = self.client.post('/password-reset/', data={'email': 'kolpk@gmail.com' })
+        response = self.client.post('/password-reset/', data={'email': 'kolpk@gmail.com'})
         self.assertEqual(response.status_code, 302)
 
     def test_reset_password_done(self):
