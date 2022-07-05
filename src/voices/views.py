@@ -22,12 +22,12 @@ class VoiceGeneratorPage(LoginRequiredMixin, View):
         return render(request, self.template_name, context)
 
     def post(self, request):
-        form = self.form_class(request.POST, data=request.POST)
+        form = self.form_class(request.POST)
 
         if form.is_valid():
             record_text = form.cleaned_data.get('record_text')
-            generate_voice(user=self.request.user, text=record_text).delay()
-            return redirect("welcome")
+            generate_voice(user=self.request.user, text=record_text)
+            return redirect('history')
 
         context = {
             'form': self.form_class
