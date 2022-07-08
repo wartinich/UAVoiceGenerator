@@ -4,7 +4,7 @@ from users.models import User
 
 class Record(models.Model):
     record_text = models.TextField(verbose_name='Record text', max_length=500)
-    file = models.FileField(verbose_name='Record file', upload_to='voices/')
+    file = models.FileField(verbose_name='Record file', upload_to='voices/', max_length=500)
 
     def __str__(self):
         return str(self.id)

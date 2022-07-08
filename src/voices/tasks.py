@@ -26,14 +26,16 @@ def generate_voice(user, text):
 
     audio_file = model.save_wav(text=text, speaker=speaker, sample_rate=rate)
 
+    shutil.move('test.wav', f'{settings.MEDIA_ROOT}/voices/test.wav')
+    os.rename(f'{settings.MEDIA_ROOT}/voices/test.wav', f'{settings.MEDIA_ROOT}/voices/{generate_key}.wav')
+
     record = Record.objects.create(
         record_text=text,
         file=audio_file
     )
 
-    shutil.move('test.wav', f'{settings.MEDIA_ROOT}/voices/test.wav')
-    os.rename(f'{settings.MEDIA_ROOT}/voices/test.wav', f'{settings.MEDIA_ROOT}/voices/{generate_key}.wav')
-
+    record.file.name = f'voices/{generate_key}.wav'
+    record.save()
 
     record_history = RecordHistory.objects.create(
         record=record,

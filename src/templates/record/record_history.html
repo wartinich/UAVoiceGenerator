@@ -2,8 +2,6 @@
 
 {% block title %}Record history{% endblock %}
 
-{% block visual %}{% endblock %}
-
 {% block content %}
     {% include 'nav/navbar.html' %}
 
@@ -11,7 +9,10 @@
         {% for record in records %}
             <div class="p-6 m-3 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ record.record.record_text }}</h5>
-                <input value="{{ record.record.file }}" class="block w-full text-sm text-white bg-blue-700 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" type="file">
+                <audio controls>
+                    <source src="{{ record.record.file.url }}" type="audio/wav">
+                    <p>Your browser does not support the audio element.</p>
+                </audio>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ record.created_at|date:"d.m.Y" }}</p>
             </div>
         {% endfor %}
