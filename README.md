@@ -12,6 +12,12 @@ Backend:
 * Redis
 * ElasticSearch
 
+## **Components**
+![image](.docs/images/django.jpg)
+
+## **Tables**
+![image](.docs/images/users.jpg) ![image](.docs/images/records.jpg) 
+
 ## **Setup Instructions**
 
 ### Clone repository
