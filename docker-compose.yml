@@ -1,0 +1,46 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:12.0-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_DB=django_db
+      - POSTGRES_USER=django_user
+      - POSTGRES_PASSWORD=django_password
+    ports:
+      - 5432:5432
+
+  redis:
+    image: redis
+    restart: always
+    ports:
+      - 6379:6379
+
+  back:
+    build:
+      context: ./src
+    command: bash /app/entrypoint.sh
+    volumes:
+      - ./src:/app
+    ports:
+      - 8000:8000
+    restart: always
+    depends_on:
+      - db
+
+  celery:
+    build:
+      context: ./src
+    command: celery -A config worker -l info
+    volumes:
+      - ./src:/usr/src/app
+
+    depends_on:
+      - back
+      - redis
+
+volumes:
+  postgres_data:
+

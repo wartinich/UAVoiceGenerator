@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block visual %}
+<style type="text/tailwindcss">
+
+    input{
+         @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white
+    }
+
+</style>
+{% endblock %}
+
+{% block content %}
+    <div class="block absolute right-0 bottom-0 top-0 left-0 m-auto p-4 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700 h-max">
+        <form class="space-y-6" method="POST">
+            {% csrf_token %}
+            <h5 class="text-xl text-center font-medium text-gray-900 dark:text-white">Sign up</h5>
+            <div>
+                <label for="id_email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email</label>
+                {{ form.email }}
+            </div>
+            <div>
+                <label for="id_username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Username</label>
+                {{ form.username }}
+            </div>
+            <div>
+                <label for="id_first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">First name</label>
+                {{ form.first_name }}
+            </div>
+            <div>
+                <label for="id_last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Last name</label>
+                {{ form.last_name }}
+            </div>
+            <div>
+                <label for="id_birth_date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Birth date</label>
+                {{ form.birth_date }}
+            </div>
+            <div>
+                <label for="id_password1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Confirm password</label>
+                {{ form.password1 }}
+            </div>
+            <div>
+                <label for="id_password2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Confirm password</label>
+                {{ form.password1 }}
+            </div>
+            <button class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign up</button>
+            <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                Already have an account? <a href="{% url 'login' %}" class="text-blue-700 hover:underline dark:text-blue-500">Sign in</a>
+            </div>
+        </form>
+    </div>
+{% endblock %}
