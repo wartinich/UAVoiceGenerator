@@ -14,6 +14,7 @@ Backend:
 
 ## **Components**
 ![image](.docs/images/django.jpg)
+![image](.docs/images/profile.jpg)
 
 ## **Tables**
 ![image](.docs/images/users.jpg) ![image](.docs/images/records.jpg) 

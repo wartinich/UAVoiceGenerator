@@ -18,3 +18,11 @@ The file contains important changes from version to version.
 * Styling login and sign up pages
 * Styling restore password pages
 * Setup restore password
+
+## 2022.07.04 - 2022.07.09
+
+### Features
+
+* Redesign templates
+* Voice generation functionality
+* Record history
