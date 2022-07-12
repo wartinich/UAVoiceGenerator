@@ -183,12 +183,18 @@ EMAIL_PORT = os.environ.get('EMAIL_PORT')
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 
-
-
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
+}
+
+DJOSER = {
+    'PASSWORD_RESET_CONFIRM_URL': 'password/reset/confirm/{uid}/{token}',
+    'USERNAME_RESET_CONFIRM_URL': 'username/reset/confirm/{uid}/{token}',
+    'ACTIVATION_URL': 'activate/{uid}/{token}',
+    'SEND_ACTIVATION_EMAIL': False,
+    'SERIALIZERS': {},
 }
 
 SIMPLE_JWT = {
@@ -203,7 +209,7 @@ SIMPLE_JWT = {
 CELERY_BROKER_URL = os.environ.get('CELERY_BROKER_URL')
 CELERY_RESULT_BACKEND = os.environ.get('CELERY_RESULT_BACKEND')
 
-ELASTICSEARCH_DSL={
+ELASTICSEARCH_DSL = {
     'default': {
         'hosts': 'localhost:9200'
     },
