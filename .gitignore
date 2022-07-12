@@ -34,4 +34,6 @@ home.rst
 
 .pytest_cache
 
-files/
+files/send_emails/
+files/media/voices/
+files/media/avatars/
