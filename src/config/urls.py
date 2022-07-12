@@ -25,7 +25,7 @@ urlpatterns = [
     #Apps
     path('', include('users.urls')),
     path('', include('voices.urls')),
-    path('', include('api.urls')),
+    path('api/', include('api.urls')),
 
     #Swagger
     path('swagger(?P<format>\.json|\.yaml)', schema_view.without_ui(cache_timeout=0), name='schema-json'),

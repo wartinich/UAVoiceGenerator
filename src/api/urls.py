@@ -1,6 +1,8 @@
 from django.urls import path, include
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView, TokenVerifyView
 from djoser.views import UserViewSet
+from api.views import RecordHistoryView, VoiceGeneratorView
+
 
 urlpatterns = [
     path('sign_up/', UserViewSet.as_view({'post': 'create'})),
@@ -16,4 +18,8 @@ urlpatterns = [
     path('password_reset/confirm/', UserViewSet.as_view({'post': 'reset_password_confirm'})),
 
     path('change_password/', UserViewSet.as_view({'post': 'set_password'})),
+
+    path('record_history/', RecordHistoryView.as_view(), name='record_history'),
+    path('generate/', VoiceGeneratorView.as_view())
+
 ]
