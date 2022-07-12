@@ -10,5 +10,10 @@ urlpatterns = [
     path('login/verify/', TokenVerifyView.as_view(), name='token_verify'),
 
     path('user/me/', UserViewSet.as_view({'get': 'me'})),
-    path('user/me/update/', UserViewSet.as_view({'patch': 'me', 'put': 'me'}))
+    path('user/me/update/', UserViewSet.as_view({'patch': 'me', 'put': 'me'})),
+
+    path('password_reset/', UserViewSet.as_view({'post': 'reset_password'})),
+    path('password_reset/confirm/', UserViewSet.as_view({'post': 'reset_password_confirm'})),
+
+    path('change_password/', UserViewSet.as_view({'post': 'set_password'})),
 ]
