@@ -1,5 +1,14 @@
-from django.urls import path
+from django.urls import path, include
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView, TokenVerifyView
+from djoser.views import UserViewSet
 
 urlpatterns = [
+    path('sign_up/', UserViewSet.as_view({'post': 'create'})),
 
+    path('login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('login/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('login/verify/', TokenVerifyView.as_view(), name='token_verify'),
+
+    path('user/me/', UserViewSet.as_view({'get': 'me'})),
+    path('user/me/update/', UserViewSet.as_view({'patch': 'me', 'put': 'me'}))
 ]

@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     'drf_yasg',
     
     'users',
-    'voices'
+    'voices',
+    'api'
 ]
 
 MIDDLEWARE = [
@@ -194,7 +195,11 @@ DJOSER = {
     'USERNAME_RESET_CONFIRM_URL': 'username/reset/confirm/{uid}/{token}',
     'ACTIVATION_URL': 'activate/{uid}/{token}',
     'SEND_ACTIVATION_EMAIL': False,
-    'SERIALIZERS': {},
+    'SERIALIZERS': {
+        'user': 'api.serializers.CustomUserSerializer',
+        'current_user': 'api.serializers.CustomUserSerializer',
+        'user_create': 'api.serializers.CustomUserCreateSerializer'
+    },
 }
 
 SIMPLE_JWT = {
