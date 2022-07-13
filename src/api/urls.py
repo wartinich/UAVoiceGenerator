@@ -2,13 +2,6 @@ from django.urls import path, include
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView, TokenVerifyView
 from djoser.views import UserViewSet
 from api.views import RecordViewSet
-from drf_yasg.utils import swagger_auto_schema
-
-
-docs_user = \
-    swagger_auto_schema(
-        tags=['user']
-    )(UserViewSet.as_view({'get': 'me'}))
 
 
 urlpatterns = [
@@ -20,7 +13,7 @@ urlpatterns = [
     path('login/verify/', TokenVerifyView.as_view(), name='token_verify'),
 
     # Profile
-    path('user/me/', docs_user),
+    path('user/me/', UserViewSet.as_view({'get': 'me'})),
     path('user/me/update/', UserViewSet.as_view({'patch': 'me', 'put': 'me'})),
 
     # Password reset
