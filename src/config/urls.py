@@ -6,6 +6,9 @@ from django.urls.conf import include
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
+from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
+import json
 
 
 schema_view = get_schema_view(
@@ -19,15 +22,29 @@ schema_view = get_schema_view(
 )
 
 
+@login_required()
+def userdata(request):
+    user = request.user
+    return HttpResponse(
+        json.dumps({
+            'username': user.username
+        }),
+        content_type='application/json'
+    )
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    #Apps
+    # Apps
     path('', include('users.urls')),
     path('', include('voices.urls')),
     path('api/', include('api.urls')),
 
-    #Swagger
+    path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
+    path('userdata', userdata, name='userdata'),
+
+    # Swagger
     path('swagger(?P<format>\.json|\.yaml)', schema_view.without_ui(cache_timeout=0), name='schema-json'),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui')
 ]
