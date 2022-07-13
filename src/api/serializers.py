@@ -1,5 +1,3 @@
-from abc import ABC
-
 from rest_framework import serializers
 from djoser.serializers import UserSerializer, UserCreateSerializer
 from users.models import User
@@ -7,12 +5,14 @@ from voices.models import Record, RecordHistory
 
 
 class CustomUserSerializer(UserSerializer):
+    """Custom djoser.serializers.UserSerializer"""
     class Meta(UserSerializer.Meta):
         model = User
         fields = ['id', 'email', 'username', 'first_name', 'last_name', 'avatar_image', 'birth_date', 'sex']
 
 
 class CustomUserCreateSerializer(UserCreateSerializer):
+    """Custom djoser.serializers.UserCreateSerializer"""
     class Meta(UserCreateSerializer.Meta):
         model = User
         fields = ['email', 'username', 'first_name', 'last_name', 'birth_date', 'password']
@@ -35,4 +35,5 @@ class RecordHistorySerializer(serializers.ModelSerializer):
 
 
 class VoiceGenerateSerializer(serializers.Serializer):
+    """Serialize field for generate voice"""
     text = serializers.CharField(max_length=250)
