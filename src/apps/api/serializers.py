@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from djoser.serializers import UserSerializer, UserCreateSerializer
-from users.models import User
-from voices.models import Record, RecordHistory
+from apps.users.models import User
+from apps.voices.models import Record, RecordHistory
 
 
 class CustomUserSerializer(UserSerializer):

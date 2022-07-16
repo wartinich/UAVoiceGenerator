@@ -37,9 +37,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # Apps
-    path('', include('users.urls')),
-    path('', include('voices.urls')),
-    path('api/', include('api.urls')),
+    path('', include('apps.users.urls')),
+    path('', include('apps.voices.urls')),
+    path('api/', include('apps.api.urls')),
 
     path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
     path('userdata', userdata, name='userdata'),

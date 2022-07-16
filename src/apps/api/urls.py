@@ -1,7 +1,7 @@
 from django.urls import path, include
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView, TokenVerifyView
 from djoser.views import UserViewSet
-from api.views import RecordViewSet
+from apps.api.views import RecordViewSet
 
 
 urlpatterns = [

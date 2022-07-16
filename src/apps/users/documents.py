@@ -1,6 +1,6 @@
 from django_elasticsearch_dsl import Document, fields
 from django_elasticsearch_dsl.registries import registry
-from users.models import User
+from apps.users.models import User
 
 
 @registry.register_document

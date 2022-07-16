@@ -1,5 +1,5 @@
 from django.contrib import admin
-from voices.models import Record, RecordHistory
+from apps.voices.models import Record, RecordHistory
 
 
 @admin.register(Record)

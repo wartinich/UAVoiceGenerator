@@ -1,9 +1,9 @@
 from rest_framework import generics, viewsets
 from django.shortcuts import redirect
-from api.serializers import RecordHistorySerializer, VoiceGenerateSerializer
-from voices.models import RecordHistory
+from apps.api.serializers import RecordHistorySerializer, VoiceGenerateSerializer
+from apps.voices.models import RecordHistory
 from rest_framework.response import Response
-from voices.tasks import generate_voice
+from apps.voices.tasks import generate_voice
 from drf_yasg.utils import swagger_auto_schema
 
 

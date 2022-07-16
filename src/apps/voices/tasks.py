@@ -4,7 +4,7 @@ import uuid
 import shutil
 from celery import shared_task
 from django.conf import settings
-from voices.models import Record, RecordHistory
+from apps.voices.models import Record, RecordHistory
 
 
 @shared_task

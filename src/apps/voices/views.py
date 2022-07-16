@@ -1,9 +1,9 @@
 from django.views.generic import View, ListView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect
-from voices.forms import CreateRecord
-from voices.tasks import generate_voice
-from voices.models import RecordHistory
+from apps.voices.forms import CreateRecord
+from apps.voices.tasks import generate_voice
+from apps.voices.models import RecordHistory
 
 
 class WelcomePage(View):

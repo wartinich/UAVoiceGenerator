@@ -1,5 +1,5 @@
 from django.urls import path
-from voices.views import WelcomePage, VoiceGeneratorPage, VoiceHistoryPage
+from apps.voices.views import WelcomePage, VoiceGeneratorPage, VoiceHistoryPage
 
 
 urlpatterns = [

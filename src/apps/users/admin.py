@@ -1,7 +1,7 @@
 from django.contrib.auth.admin import UserAdmin as CustomUserAdmin
 from django.contrib import admin
 from django.utils.html import mark_safe
-from users.models import User
+from apps.users.models import User
 
 
 @admin.register(User)
@@ -15,7 +15,7 @@ class UserAdmin(CustomUserAdmin):
     )
     ordering = ['-id',]
 
-    #Show avatar_image at admin
+    # Show avatar_image at admin
     def show_avatar(self, obj):
         if obj.avatar_image:
             return mark_safe("<img src='{}' width='60' />".format(obj.avatar_image.url))

@@ -1,6 +1,6 @@
 from django_elasticsearch_dsl import Document, fields
 from django_elasticsearch_dsl.registries import registry
-from voices.models import Record, RecordHistory
+from apps.voices.models import Record, RecordHistory
 
 #
 # @registry.register_document

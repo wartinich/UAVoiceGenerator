@@ -1,5 +1,5 @@
 from django import forms
-from voices.models import Record
+from apps.voices.models import Record
 
 
 class CreateRecord(forms.Form):

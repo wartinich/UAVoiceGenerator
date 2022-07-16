@@ -1,7 +1,7 @@
 from django.views.generic import View
 from django.urls import reverse_lazy
 from django.shortcuts import render, redirect
-from users.forms import LoginUserForm, RegisterForm, UpdateUserForm
+from apps.users.forms import LoginUserForm, RegisterForm, UpdateUserForm
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin

@@ -76,3 +76,5 @@ virtualenv==20.14.1
 virtualenv-clone==0.5.7
 wcwidth==0.2.5
 wrapt==1.14.1
+torch
+numpy

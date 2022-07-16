@@ -1,7 +1,7 @@
 from django.urls import path
-from users.views import RegisterPageView, LoginPageView, UpdateUserView, DeactivateUser
+from apps.users.views import RegisterPageView, LoginPageView, UpdateUserView, DeactivateUser
 from django.contrib.auth import views as auth_views
-from users.forms import CustomChangePasswordForm, CustomResetPasswordForm
+from apps.users.forms import CustomChangePasswordForm, CustomResetPasswordForm
 
 urlpatterns = [
     path('sign_up/', RegisterPageView.as_view(), name='sign_up'),
